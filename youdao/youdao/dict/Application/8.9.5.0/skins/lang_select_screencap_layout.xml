@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LanguageSelectWnd>
+	<Version>1.0</Version>
+	<WinHeight>94</WinHeight>
+	<WinWidth>337</WinWidth>
+	<Layout>
+		<PushAttr Background="#333333"/>
+		<VBoxLayout SizePolicy="Spring;Spring">
+			<Space Size="12"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="11">
+				<Space Size="16"/>
+				<TextButton Text="@ScreenCaptureSrcLang" SizePolicy="Auto;Auto" Enabled="False" FontSize="11" FontFamily="微软雅黑" TextColor="#B3B3B3"/>
+				<Spring/>
+			</HBoxLayout>
+			<Space Size="10"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="1">
+				<Space Size="16"/>
+				<Separator SizePolicy="Spring;Fix" Height="1" Background="#3F3F3F"/>
+				<Space Size="17"/>
+			</HBoxLayout>
+			<Space Size="10"/>
+			<PushAttr ExcluseId="0" SizePolicy="Auto;Auto"/>
+			<PushAttr TextAlign="Left" FontFamily="微软雅黑" FontSize="13" TextColor="#B3B3B3;#FFFFFF"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="13">
+				<Space Size="16"/>
+				<TextButton Name="$auto" Text="@SrcLangAuto" Actived="True"/>
+				<Space Size="16"/>
+				<TextButton Name="$en" Text="@LangEn"/>
+				<Space Size="16"/>
+				<TextButton Name="$ja" Text="@LangJa"/>
+				<Space Size="16"/>
+				<TextButton Name="$ko" Text="@LangKo"/>
+				<Space Size="16"/>
+				<TextButton Name="$fr" Text="@LangFr"/>
+				<Space Size="16"/>
+				<TextButton Name="$de" Text="@LangDe"/>
+				<Space Size="16"/>
+				<TextButton Name="$ru" Text="@LangRu"/>
+				<Spring/>
+			</HBoxLayout>
+			<Space Size="12"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="13">
+				<Space Size="16"/>
+				<TextButton Name="$pt" Text="@LangPt"/>
+				<Space Size="16"/>
+				<TextButton Name="$es" Text="@LangEs"/>
+				<Spring/>
+			</HBoxLayout>
+			<PopAttr ExcluseId="" SizePolicy=""/>
+			<PopAttr TextAlign="" FontFamily="" FontSize="" TextColor=""/>
+			<Space Size="12"/>
+	    </VBoxLayout>
+	</Layout>
+</LanguageSelectWnd>
+			

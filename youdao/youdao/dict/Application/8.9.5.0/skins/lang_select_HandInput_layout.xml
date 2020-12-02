@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LanguageSelectWnd>
+	<Version>1.0</Version>
+	<WinHeight>128</WinHeight>
+	<WinWidth>96</WinWidth>
+	<Layout>
+		<PushAttr Background="#FFFFFF"/>
+		<VBoxLayout SizePolicy="Spring;Spring">
+			<Space Size="20"/>
+			<PushAttr ExcluseId="0" Height="13"/>
+			<PushAttr TextAlign="Center" FontFamily="微软雅黑" FontSize="13" TextColor="#666666;#D20A0A"/>
+			<TextButton Name="$zh-CHS" Height="13" SizePolicy="Spring;Fix" Text="@LangZh-CHS" Actived="True"/>
+			<Space Size="12"/>
+			<TextButton Name="$ja" Height="13" SizePolicy="Spring;Fix" Text="@LangJa"/>
+			<Space Size="12"/>
+			<TextButton Name="$ko" Height="13" SizePolicy="Spring;Fix" Text="@LangKo"/>
+			<Space Size="12"/>
+			<TextButton Name="$en" Height="13" SizePolicy="Spring;Fix" Text="@LangEn"/>
+			<Spring/>
+		</VBoxLayout>
+	</Layout>
+</LanguageSelectWnd>

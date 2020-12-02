@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LanguageSelectWnd>
+	<Version>1.0</Version>
+	<WinHeight>60</WinHeight>
+	<WinWidth>306</WinWidth>
+	<Layout>
+		<PushAttr Background="#FFFFFF"/>
+		<VBoxLayout SizePolicy="Spring;Spring">
+			<Space Size="10"/>
+			<PushAttr ExcluseId="0" Width="54" Height="15"/>
+			<PushAttr TextAlign="Left" FontFamily="微软雅黑" FontSize="12" TextColor="#666666;#D20A0A"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="15">
+				<Space Size="15"/>
+				<TextButton Name="$en" Text="@LangEng" Actived="True"/>
+				<Space Size="20"/>
+				<TextButton Name="$fr" Text="@LangFrc"/>
+				<Space Size="20"/>
+				<TextButton Name="$ko" Text="@LangKor"/>
+				<Space Size="20"/>
+				<TextButton Name="$ja" Text="@LangJap"/>
+				<Spring/>
+			</HBoxLayout>
+			<Space Size="10"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="15">
+				<Space Size="15"/>
+				<TextButton Name="$de" Text="@LangGmn"/>
+				<Space Size="20"/>
+				<TextButton Name="$ru" Text="@LangRss"/>
+				<Space Size="20"/>
+				<TextButton Name="$pt" Text="@LangPtg"/>
+				<Space Size="20"/>
+				<TextButton Name="$es" Text="@LangSpn"/>
+				<Spring/>
+			</HBoxLayout>
+			<Spring/>
+		</VBoxLayout>
+	</Layout>
+</LanguageSelectWnd>

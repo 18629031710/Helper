@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<PopupWnd>
+	<Version>1.0</Version>
+	<WinHeight>330</WinHeight>
+	<WinWidth>330</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E6E6E6">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		
+		<VBoxLayout Name="RootLayout" Background="#FAFAFA" SizePolicy="Spring;Spring">
+			<HBoxLayout Name="PopupTitle" SizePolicy="Spring;Fix" Height="40">
+				<Space Size="20"/>
+				<IconButton Name="WinName"  Background="#FAFAFA" Icon="pop-logo.png" Width="110" Height="24" IconWidth="110" IconHeight="24" Enabled="False"/>
+				<Spring/>
+				<IconButton Name="PopupClose" Background="#FAFAFA" Icon="mini-close.png;mini-close-hover.png" Width="12" Height="12" IconWidth="10" IconHeight="10"/>
+				<Space Size="20"/>
+			</HBoxLayout>
+			<Separator SizePolicy="Spring;Fix" Height="1" Background="#E5E5E5"/>
+			<CefWnd Name="PopupContent" WndClass="YdPopupCefWnd" SizePolicy="Spring;Spring" MinWidth="100" MinHeight="20" StartPage="frame://html/corner.html"/>
+		</VBoxLayout>
+		
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</PopupWnd>

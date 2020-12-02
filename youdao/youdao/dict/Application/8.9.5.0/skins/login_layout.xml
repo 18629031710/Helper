@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LoginWindow>
+	<Version>1.0</Version>
+	<WinHeight>470</WinHeight>
+	<WinWidth>330</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring">
+			<Frame Name="LoginWndFrame" SizePolicy="Spring;Spring">
+				<PushAttr Background="#FFFFFF" SizePolicy="Spring;Fix"/>
+				<VBoxLayout Name="LoginWnd" SizePolicy="Spring;Spring">
+					<Space Size="18"/>
+					<HBoxLayout Name="LoginHeader" Height="16">
+						<Space Size="20"/>
+						<IconButton Name="LoginPre" SizePolicy="Fix;Fix" Width="12" Height="16" IconWidth="10" IconHeight="16" Icon="login-pre.png;login-pre-hover.png" Visible="False"/>
+						<Spring/>
+						<IconButton Name="LoginClose" SizePolicy="Fix;Fix" Width="14" Height="14" IconWidth="13" IconHeight="13" Icon="close.png;close-hover.png"/>
+						<Space Size="20"/>
+					</HBoxLayout>
+					<Space Size="14"/>
+					<HBoxLayout Name="LoginIcon" Height="63">
+						<Spring/>
+						<IconButton Name="LoginLogo" SizePolicy="Fix;Fix"  Width="96" Height="63" Icon="login-logo.png" Enabled="False"/>
+						<Spring/>
+					</HBoxLayout>
+					<Space Size="33"/>
+					<PushAttr Height="30" Background="#00FFFFFF" BackUnfocus="#00FFFFFF" TextColor="#00333333" DefTextColor="#00B3B3B3" FontFamily="微软雅黑" FontSize="13"/>
+					<HBoxLayout Name="LoginName" Height="16" Background="#FFFFFF">
+						<Space Size="40"/>
+						<IconButton Name="LoginNameIcon" SizePolicy="Fix;Fix" Width="15" Height="16" Icon="login-account.png" Enabled="False"/>
+						<Space Size="13"/>
+							<LoginCombBox Name="LoginNameEdit" MaxTextNum="256" Align="Center;Top" DefaultText="@LoginNamePlaceholder" DropBgColor="#00FFFFFF" ItemHeight="28" ItemTextColor="#00B3B3B3" ItemBgColor="#00FFFFFF" ItemBgColorFocus="#00ECEEF1" BorderColor="#00D2D2D5"/>
+						<Space Size="40"/>
+					</HBoxLayout>
+					<Space Size="9"/>
+					<HBoxLayout Height="1">
+						<Space Size="40"/>
+						<Separator Height="1" Background="#E6E6E6"/>
+						<Space Size="40"/>
+					</HBoxLayout>
+					<Space Size="25"/>
+					<HBoxLayout Name="LoginPW" Background="#FFFFFF" Height="16">
+						<Space Size="40"/>
+						<IconButton Name="LoginPwdIcon" SizePolicy="Fix;Fix" Width="15" Height="16" IconWidth="14" Icon="login-pwd.png" Enabled="False"/>
+						<Space Size="13"/>
+						<InputBox Name="LoginPWEdit" Mode="Password" Align="Center;Top" MaxTextNum="256" DefaultText="@LoginPWPlaceholder"/>
+						<Space Size="40"/>
+					</HBoxLayout>
+					<PopAttr Background="" BackUnfocus="" TextColor=""/>
+					<Space Size="9"/>
+					<HBoxLayout Height="1">
+						<Space Size="40"/>
+						<Separator Height="1" Background="#E6E6E6"/>
+						<Space Size="40"/>
+					</HBoxLayout>
+					<Space Size="12"/>
+					<HBoxLayout Name="LoginOption" Height="14">
+						<Space Size="40"/>
+						<CheckBox Name="LoginAutoOpt" Height="16" Width="60" Icon="check.png;check-hover.png" CheckedIcon="checked.png" Checked="True" IconMargin="0" IconHeight="14" IconWidth="14" Text="@LoginAuto" FontSize="12" TextMargin="28"  TextColor="#666666"/>
+						<Spring/>
+						<TextButton Name="LoginForgetPW" SizePolicy="Auto;Auto" Width="60" Text="@LoginForgetPW" FontSize="12" TextColor="#666666;#D20A0A"/>
+						<Space Size="40"/>
+					</HBoxLayout>
+					<Space Size="12"/>
+					<TextButton Name="ErrorMsg" Height="13" Text="" FontSize="12" TextColor="#F23A3A" Enabled="False"/>
+					<Space Size="6"/>
+					<HBoxLayout Name="LoginSubmitRegion" Height="35">
+						<Space Size="40"/>
+						<TextButton Name="LoginSubmit" Height="35" Icon="login-button.png;login-button-hover.png" IconMode="Stretch" Text="@LoginButtonText" TextColor="#FFFFFF"/>
+						<Space Size="40"/>
+					</HBoxLayout>
+					<Space Size="12"/>
+					<HBoxLayout Name="LoginRegisterRegion" Height="35">
+						<Space Size="40"/>
+						<TextButton Name="LoginMobile" Height="35" Icon="login-register.png;login-register-hover.png" IconMode="Stretch" Text="@LoginMobileText" TextColor="#666666"/>
+						<Space Size="40"/>
+					</HBoxLayout>
+					<Spring/>
+					<TextButton Name="LoginOtherText" Height="11" Text="@LoginOtherLogin" FontSize="11" TextColor="#5F6266" Enabled="False"/>
+					<Space Size="12"/>
+					<HBoxLayout Name="LoginOther" Height="28">
+						<PushAttr SizePolicy="Fix;Fix" Width="28" Height="28"/>
+						<Spring/>
+						<IconButton Name="LoginWeixin" Icon="login-weixin.png;login-weixin-hover.png"/>
+						<Space Size="30"/>
+						<IconButton Name="LoginWeibo" Icon="login-weibo.png;login-weibo-hover.png"/>
+						<Space Size="30"/>
+						<IconButton Name="LoginQQ" Icon="login-qq.png;login-qq-hover.png"/>
+						<Spring/>
+					</HBoxLayout>
+					<Space Size="29"/>
+				</VBoxLayout>
+				<PushAttr Background="#FFFFFF" SizePolicy="Spring;Fix"/>
+				<VBoxLayout Name="LoginDTTipWnd" SizePolicy="Spring;Spring">
+					<Space Size="20"/>
+					<HBoxLayout Name="LoginTipHeader" Height="13">
+						<Spring/>
+						<IconButton Name="LoginTipClose" SizePolicy="Fix;Fix" Width="14" Height="14" IconWidth="13" IconHeight="13" Icon="close.png;close-hover.png"/>
+						<Space Size="20"/>
+					</HBoxLayout>
+					<Space Size="47"/>
+					<HBoxLayout Name="LoginTipIcon" Height="101">
+						<Spring/>
+						<IconButton Name="LoginTipLogo" SizePolicy="Fix;Fix"  Width="120" Height="101" Icon="login-tip-logo.png" Enabled="False"/>
+						<Spring/>
+					</HBoxLayout>
+					<Space Size="16"/>
+					<VBoxLayout Name="LoginTipText" Height="40">
+						<TextButton Name="LoginDTTipTextFirst" Width="260" Height="20" Text="@DTLoginWndTipFirst" FontFamily="微软雅黑" FontSize="13" TextColor="#666666" TextAlign="Center" Enabled="False"/>
+						<TextButton Name="LoginDTTipTextSecond" Width="260" Height="20" Text="@DTLoginWndTipSecond" FontFamily="微软雅黑" FontSize="13" TextColor="#666666" TextAlign="Center" Enabled="False"/>
+					</VBoxLayout>
+					<Space Size="39"/>
+					<HBoxLayout Name="LoginTipGoLogin" Height="35">
+						<Space Size="40"/>
+						<TextButton Name="LoginTipLogin" Height="35" Icon="login-button.png;login-button-hover.png" IconMode="Stretch" Text="@DTLogin" TextColor="#FFFFFF" FontSize="13" FontFamily="微软雅黑"/>
+						<Space Size="40"/>
+					</HBoxLayout>
+					<Space Size="10"/>
+					<HBoxLayout Name="LoginTipSkipLogin" Height="35">
+						<Space Size="40"/>
+						<TextButton Name="LoginTipSkip" Height="35" Icon="login-register.png;login-register-hover.png" IconMode="Stretch" Text="@DTLoginSkip" TextColor="#666666" FontSize="13" FontFamily="微软雅黑"/>
+						<Space Size="40"/>	
+					</HBoxLayout>
+					<Space Size="24"/>
+					<HBoxLayout Name="LoginTipOption" Height="14">
+						<Space Size="127"/>
+						<CheckBox Name="LoginTipOpt" Height="16" Width="60" Icon="check.png;check-hover.png" CheckedIcon="checked.png" Checked="True" IconMargin="0" IconHeight="14" IconWidth="14" Text="@LoginSkip" FontSize="12" TextMargin="28"  TextColor="#666666" FontFamily="微软雅黑"/>
+						<Spring/>
+					</HBoxLayout>
+					<Spring/>
+				</VBoxLayout>
+			</Frame>
+		</VBoxLayout>
+	</Layout>
+</LoginWindow>

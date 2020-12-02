@@ -1,0 +1,64 @@
+
+body {
+    color: #313131; 
+	background: url(bg-win7.jpg) repeat-x fixed;
+}
+
+a:link, a:visited, 
+p.via a, 
+p.additional a,
+.more, 
+.wordGroup .contentTitle, 
+.trans-container .more-example, 
+#example_content .tabLink a, 
+.example_see_also .title, 
+.error-typo .typo-rel .title 
+{
+    color: #35A1D4;
+}
+
+
+b {
+    color: #54903f;
+}
+
+
+.tabs a, .tab-current {
+    color: #6292B5;
+}
+
+
+.example-via a {
+    color: #959595;
+    text-decoration: none
+}
+
+
+.example_see_also .info {
+    border: 1px solid #B8BDC1;
+}
+
+a.info:hover {
+    border: 1px solid #dbd1a2;
+}
+
+
+#example_navigator .sub-catalog li {
+    color: #1D84D0;
+}
+
+#example_navigator .main-catalog {
+    color: #6292B5;
+}
+
+
+.sp, .trans-wrapper h3, .trans-wrapper h3 .toggleOpen, .trans-wrapper h3 .toggleClose, .tabs a, .tab-current,
+.tabs a span, .tab-current span, .wordGroup .century21, .wordGroup a.century21:hover, #example_content .allExplanation,
+#example_content a.allSelected,.trans-wrapper h3 .tail{
+    background-image: url("default.png");
+}
+
+
+.highLight {
+    background: #D6EBF9;
+}

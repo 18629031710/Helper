@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<TrayMenu>
+	<Version>1.0</Version>
+	<WinHeight>110</WinHeight>
+	<WinWidth>128</WinWidth>
+	<Layout>
+		<VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<PushAttr SizePolicy="Spring;Fix" Background="#FFFFFF;#FDF3F3" Height="36"/>
+			
+			<PushAttr TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="44"/>
+			<!--<MenuItem Name="TrayMenuGetWord" Text="@MenuGetWord" Icon="switch-off.png" CheckedIcon="switch-on.png" IconWidth="24" IconHeight="13" IconAlign="Left" IconMargin="9"/>-->
+			<!--<MenuItem Name="TrayMenuStroke" Text="@MenuStroke" Icon="switch-off.png" CheckedIcon="switch-on.png" IconWidth="24" IconHeight="13" IconAlign="Left" IconMargin="9"/>-->
+			<!--<MenuItem Name="TrayMenuScreenShot" Text="@ScrshotTransText"/>-->
+			<!--<Space size="1"/>-->
+			<!--<Separator Height="1" Background="#E6E6E6"/>-->
+			<!--<Space size="1"/>-->
+			<MenuItem Name="TrayMenuShowMainWnd" Text="@ShowMainWnd"/>
+			<MenuItem Name="TrayMenuShowTop" Text="@ShowTop" Icon="switch-off.png" CheckedIcon="switch-on.png" IconWidth="24" IconHeight="13" IconAlign="Left" IconMargin="9"/>
+			<!--<MenuItem Name="TrayMenuFeedBack" Text="@MenuFeedback"/>-->
+			<Space size="1"/>
+			<Separator Height="1" Background="#E6E6E6"/>
+			<Space size="1"/>
+			<!--<MenuItem Name="TrayMenuSetting" Text="@MenuSetting"/>-->
+			<MenuItem Name="TrayMenuExit" Text="@MenuExit"/>
+			<Spring/>
+		</VBoxLayout>
+	</Layout>
+</TrayMenu>

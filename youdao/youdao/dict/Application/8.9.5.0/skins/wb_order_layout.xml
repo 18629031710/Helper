@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<WBOrder>
+	<Version>1.0</Version>
+	<WinHeight>210</WinHeight>
+	<WinWidth>158</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		
+		<VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<MenuItem Name="timenew" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBOrderNewOld" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+			<MenuItem Name="timeold" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBOrderOldNew" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+			<MenuItem Name="wordasc" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBOrderAZ" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<MenuItem Name="worddesc" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBOrderZA" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<MenuItem Name="progressquick" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBOrderReviewFast" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<MenuItem Name="progressslow" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBOrderReviewSlow" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<MenuItem Name="WBOrderRandom" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBOrderRandom" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<Spring/>
+		</VBoxLayout>
+		
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</WBOrder>

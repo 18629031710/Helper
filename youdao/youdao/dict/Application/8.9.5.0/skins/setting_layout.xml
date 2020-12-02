@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SettingWnd>
+    <Version>1.0</Version>
+    <WinWidth>660</WinWidth>
+    <WinHeight>500</WinHeight>
+    <Layout>
+        <VBoxLayout Name="RootLayout" SizePolicy="Spring;Spring" Background="#FFFFFF">
+			<HBoxLayout Name="CommonWndTitle" SizePolicy="Spring;Fix" Height="40">
+				<HBoxLayout Background="#F5F5F5" SizePolicy="Fix;Fix" Width="130" Height="40">
+				<Space Size="130"/>
+				</HBoxLayout>
+			    <Spring/>
+				<IconButton Name="CommonWndClose" Background="#FFFFFF" Icon="close.png;close-hover.png;close-hover.png;close.png" Width="16" Height="16" IconWidth="13" IconHeight="13"/>
+				<Space Size="20"/>
+			</HBoxLayout>
+            <CefWnd Name="CommonCefWnd" WndClass="YdWordEditWnd" SizePolicy="Spring;Spring" MinWidth="100" MinHeight="100"/>
+        </VBoxLayout>
+    </Layout>
+</SettingWnd>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DocResultWnd>
+	<Version>1.0</Version>
+	<WinBorder>5</WinBorder>
+	<WinMiniHeight>600</WinMiniHeight>
+	<WinMiniWidth>930</WinMiniWidth>
+	<Layout>
+		<VBoxLayout Name="DocResult" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<HBoxLayout Name="DocResultWndHeader" Height="56" SizePolicy="Spring;Fix">
+				<Space Size="20"/>
+				<IconButton Name="DocDictIcon" SizePolicy="Auto;Auto" Width="26" Height="26" IconHeight="26" IconWidth="26" Icon="logo-shink.png" Enabled="False"/>
+				<Space Size="12"/>
+				<TextButton Name="DocResultWinName" Background="#FFFFFF" SizePolicy="Auto;Auto" Text="@DocTransText" TextColor="#666666" FontFamily="微软雅黑" FontSize="13" Enabled="False"/>
+				<Space Size="16"/>
+				<Separator Name="DocFileNameofSep" SizePolicy="Auto;Auto" Width="1" Height="20" Background="#E6E6E6"/>
+				<Space Size="16"/>
+				<TextButton Name="DocTransInfo" Background="#FFFFFF" SizePolicy="Spring;Auto" Height="13" FontFamily="微软雅黑" FontSize="13" TextColor="#999999" TextAlign="Left" Text="" TextCompressPos="10"/>
+				<Spring/>
+				<IconButton Name="DocVipTips" SizePolicy="Auto;Auto" Width="151" Height="26" IconHeight="26" IconWidth="151" Icon="doc-viptips.png"/>
+				<Space Size="4"/>
+				<TextButton Name="DocFreeQuota" Background="#FFFFFF" SizePolicy="Auto;Fix" Height="20" Text="@DocFreeQuota" FontSize="12" TextColor="#666666" FontFamily="微软雅黑"/>
+				<Space Size="12"/>
+				<Separator SizePolicy="Auto;Auto" Width="1" Height="20" Background="#E6E6E6"/>
+				<Space Size="12"/>
+				<TextButton Name="DocInstallAddIn" Background="#FFFFFF" SizePolicy="Auto;Fix" Height="20" Text="@DocInstallAddIn" FontSize="13" TextColor="#666666;#000000" FontFamily="微软雅黑"/>
+				<Space Size="12"/>
+				<Separator SizePolicy="Auto;Auto" Width="1" Height="20" Background="#E6E6E6"/>
+				<Space Size="12"/>
+				<TextButton Name="DocTranFeedback" Background="#FFFFFF" SizePolicy="Auto;Fix" Height="20" Text="@DocFeedback" FontSize="13" TextColor="#666666;#000000" FontFamily="微软雅黑"/>
+				<Space Size="12"/>
+				<Separator SizePolicy="Auto;Auto" Width="1" Height="20" Background="#E6E6E6"/>
+				<Space Size="12"/>
+				<TextButton Name="DocTranManual" Background="#FFFFFF" SizePolicy="Auto;Fix" Height="20" Text="@DocManual" FontSize="13" TextColor="#666666;#000000" FontFamily="微软雅黑"/>
+				<Space Size="12"/>
+				<Separator SizePolicy="Auto;Auto" Width="1" Height="20" Background="#E6E6E6"/>
+				<Space Size="12"/>
+				<TextButton Name="DocTranOutput" Width="94" Height="27" Icon="doc-export.png;doc-export-hover.png;doc-export-hover.png" IconMode="Stretch" IconAlign="Center;Bottom" Text="@DocExport" TextPosCorrect="10;-1" FontSize="13" FontFamily="微软雅黑" TextColor="#FFFFFF"/>
+				<Space Size="32"/>
+				<IconButton Name="DocResultWinMini" Background="#FFFFFF" SizePolicy="Fix;Fix"  Width="16" Height="16" IconWidth="14" IconHeight="1" Icon="minimum.png;minimum-hover.png"/>
+				<Space Size="22"/>
+				<FlipIconButton Name="DocResultWinMax" Background="#FFFFFF" SizePolicy="Fix;Fix"  Width="16" Height="16" Flip="False" IconWidth="13" IconHeight="13" Icon="doc-result-max.png;doc-result-max-hover.png" FlipIcon="doc-mini-max.png;doc-mini-max-hover.png" AutoFlip="False"/>
+				<Space Size="22"/>
+				<IconButton Name="DocResultWinClose" Background="#FFFFFF" SizePolicy="Fix;Fix"  Width="16" Height="16" IconWidth="13" IconHeight="13" Icon="close.png;close-hover.png"/>
+				<Space Size="20"/>
+			</HBoxLayout>	
+			<HBoxLayout Name="DocContentPart" SizePolicy="Spring;Spring">
+				<VBoxLayout Name="DocLeftFrame" SizePolicy="Fix;Spring" Width="3" Background="#FFFFFF"/>
+					<CefWnd Name="DocResultContent" WndClass="YdDocResultWnd" SizePolicy="Spring;Spring" MinWidth="820" MinHeight="530" StartPage="frame://html/index.html#/doctran"/>
+				<VBoxLayout Name="DocRightFrame" SizePolicy="Fix;Spring" Width="3" Background="#FFFFFF"/>
+			</HBoxLayout>
+			<VBoxLayout Name="DocBottomFrame" SizePolicy="Spring;Fix" Height="3" Background="#FFFFFF"/>
+			<DocContact Name="DocContactWnd" SizePolicy="Fix;Fix" Buddy="DocTranFeedback" Float="Bottom" Distance="22" FloatAnchor="74;0" Style="Popup" Height="179" Width="144" Layout="doc_contact_layout.xml" Visible="False"/>
+		</VBoxLayout>
+	</Layout>
+</DocResultWnd>

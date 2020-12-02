@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fanyipromote>
+<helplink>
+	<text><![CDATA[选择有道专业翻译，获得人工翻译结果]]></text>
+	<url><![CDATA[http://f.youdao.com/?vendor=ddictzf_top_right]]></url>
+</helplink>
+<promote>
+	<text><![CDATA[选择<a msg=%d>有道专业翻译</a>，获得人工翻译结果]]></text>
+	<url><![CDATA[http://f.youdao.com/?vendor=ddictzf_mid_bottom]]></url>
+	<showLimite>1</showLimite>
+</promote>
+
+</fanyipromote>

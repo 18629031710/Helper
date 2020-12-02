@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+<Description about="urn:mozilla:install-manifest">
+<em:id>dict@www.youdao.com</em:id>
+<em:version>1.81</em:version>
+<em:type>2</em:type>
+
+<em:targetApplication>   
+  <Description>
+  <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>    
+  <em:minVersion>2.0</em:minVersion>   
+  <em:maxVersion>20.*</em:maxVersion>   
+  </Description>   
+</em:targetApplication>
+
+
+<em:name>Youdao Word Capturer</em:name> 
+<em:description>Get word from firefox4+</em:description> 
+<em:creator>http://cidian.youdao.com</em:creator> 
+<em:homepageURL>http://www.youdao.com/</em:homepageURL>
+<em:unpack>true</em:unpack>
+</Description>             
+</RDF>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<DocContactWnd>
+	<Version>1.0</Version>
+	<WinHeight>179</WinHeight>
+	<WinWidth>144</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		
+		<VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<Space Size="24"/>
+			<IconButton Name="DTContactQRcode" Width="108" Height="109" Icon="doc-contact-qrcode.png" Enabled="False"/>
+			<TextButton Width="108" Height="20" Text="微信扫码关注公众号" FontFamily="微软雅黑" FontSize="12" TextColor="#666666" TextAlign="Center" Enabled="False"/>
+			<TextButton Width="108" Height="20" Text="在线咨询" FontFamily="微软雅黑" FontSize="12" TextColor="#666666" TextAlign="Center" Enabled="False"/>
+			<Spring/>
+		</VBoxLayout>
+		
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</DocContactWnd>

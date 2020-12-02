@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<StrokeWnd>
+	<Version>1.0</Version>
+	<WinHeight>300</WinHeight>
+	<Layout>
+		<PushAttr Background="#FFFFFF" SizePolicy="Spring;Spring"/>
+		<VBoxLayout Name="RootLayout">
+			<Space Name="TopPadding" Size="2"/>
+			<HBoxLayout Name="HistroyContent">
+				<QueryBoxList Name="HistoryList" ItemBackground="#FFFFFF;#F4F4F4" ItemTextColor="#2E3033;#919599" ItemFontFamily="微软雅黑" ItemFontSize="12" ItemContemtGap="20" ItemGap="1" ItemPadding="10;0" ItemHeight="26"/>
+				<ScrollBar Name="HistoryScrollBar" SizePolicy="Fix;Spring" Width="10" Type="Vertical" Background="#EFF3F5" BarColor="#D2D6D9;#BDC1C4" Delta="5"/>
+			</HBoxLayout>
+			<Separator SizePolicy="Spring;Fix" Height="1" Background="#E6E6E6"/>
+			<PushAttr Background="#FAFAFA" SizePolicy="Auto;Auto" IconWidth="14" IconHeight="15" IconAlign="Left"/>
+			<PushAttr  FontFamily="微软雅黑" FontSize="13" TextColor="#919599;#DB3E3E" TextAlign="Left" TextMargin="24"/>
+			<HBoxLayout Name="RooterPart" SizePolicy="Spring;Fix" Height="37">
+				<HBoxLayout Name="HistoryToWBPart" SizePolicy="Spring;Spring">
+					<Spring/>
+					<TextButton Name="HistoryToWB" Icon="history-to-wb.png;history-to-wb-hover.png" Text="@HistoryToWB"/>
+					<Spring/>
+				</HBoxLayout>
+				<Separator Height="23" Width="1" Background="#E6E6E6" SizePolicy="Fix;Fix"/>
+				<HBoxLayout Name="HistoryClearPart" SizePolicy="Spring;Spring">
+					<Spring/>
+					<TextButton Name="HistoryClear" Icon="history-clear.png;history-clear-hover.png" Text="@HistoryClear"/>
+					<Spring/>
+				</HBoxLayout>
+			</HBoxLayout>
+		</VBoxLayout>
+	</Layout>
+</StrokeWnd>

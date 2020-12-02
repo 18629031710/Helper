@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DOCPROMOTEWND>
+    <Version>1.0</Version>
+    <WinHeight>392</WinHeight>
+    <WinWidth>342</WinWidth>
+    <Layout>
+        <VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+        <Space Name="TopFrame" Size="1"/>
+        <HBoxLayout SizePolicy="Spring;Spring">
+        <Space Name="LeftFrame" Size="1"/>
+        
+        <PushAttr Background="#FFFFFF" SizePolicy="Spring;Fix"/>
+        <VBoxLayout Name="DTPromote" SizePolicy="Spring;Spring">
+            <HBoxLayout  Name="DocHeader" Height="40">
+                <Spring/>
+                <IconButton Name="DocWinClose" SizePolicy="Fix;Fix"  Width="16" Height="16" IconWidth="13" IconHeight="13" Icon="close.png;close-hover.png"/>
+                <Space Size="20"/>
+            </HBoxLayout>
+            <IconButton Name="DTPromoteImage" SizePolicy="Spring;Spring" Width="340" Height="350" IconHeight="350" IconWidth="340" Icon=""/>
+        </VBoxLayout>   
+        <Space Name="RightFrame" Size="1"/>
+        </HBoxLayout>
+        <Space Name="BottomFrame" Size="1"/>
+        </VBoxLayout>
+    </Layout>
+</DOCPROMOTEWND>

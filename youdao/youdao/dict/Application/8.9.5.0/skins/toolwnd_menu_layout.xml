@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LoginInfoWnd>
+	<Version>1.0</Version>
+	<WinHeight>166</WinHeight>
+	<WinWidth>128</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		<PushAttr Background="#FFFFFF" TextAlign="Left" FontFamily="微软雅黑" FontSize="12"/>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#FFFFFF">
+		    <Space Size="8"/>
+			<PushAttr SizePolicy="Spring;Fix" Background="#FFFFFF;#FDF3F3" Height="30"/>
+			<PushAttr TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="27"/>
+			<Frame Name="ToolMenuMainFrame" Background="#FFFFFF" SizePolicy="Spring;Spring">
+				<VBoxLayout Name="miniInfo" SizePolicy="Spring;Spring" Background="#FFFFFF">
+					<MenuItem Name="miniscreenControl"        Text="@TWMOpenScreen"/>
+					<MenuItem Name="ministrokeControl"        Text="@TWMOpenStroke"/>
+				    <MenuItem Name="openScreenCapture" Text="@ScrshotTransText"/>
+				    <MenuItem Name="openDocTrans"      Text="@DocTransText"/>
+				    <MenuItem Name="openSetting"       Text="@TWMOpenSetting"/>
+				</VBoxLayout>
+				<VBoxLayout Name="strokeInfo" SizePolicy="Spring;Spring" Background="#FFFFFF">
+				    <MenuItem Name="strokeControl" Text="@TWMCloseStroke"/>
+				    <MenuItem Name="openSetting" Text="@TWMOpenSetting"/>
+				</VBoxLayout>
+				<VBoxLayout Name="screenInfo" SizePolicy="Spring;Spring" Background="#FFFFFF">
+				    <MenuItem Name="screenControl" Text="@TWMCloseScreen"/>
+				    <MenuItem Name="openSetting" Text="@TWMOpenSetting"/>
+				</VBoxLayout>
+			</Frame>
+			<Space Size="8"/>
+		</VBoxLayout>
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</LoginInfoWnd>

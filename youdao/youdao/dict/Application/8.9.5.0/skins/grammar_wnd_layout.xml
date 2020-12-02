@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DocResultWnd>
+	<Version>1.0</Version>
+	<WinBorder>5</WinBorder>
+	<WinMiniHeight>574</WinMiniHeight>
+	<WinMiniWidth>900</WinMiniWidth>
+	<Layout>
+		<VBoxLayout Name="ydGrammar" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<HBoxLayout Name="ydGrammarWndHeader" Height="56" SizePolicy="Spring;Fix">
+				<Space Size="24"/>
+				<IconButton Name="DocDictIcon" SizePolicy="Auto;Auto" Width="26" Height="26" IconHeight="26" IconWidth="26" Icon="logo-shink.png" Enabled="False"/>
+				<Space Size="10"/>
+				<TextButton Name="ydGrammarWinName" Background="#FFFFFF" SizePolicy="Auto;Auto" Text="@GrammarWndText" TextColor="#666666" FontFamily="微软雅黑" FontSize="13" Enabled="False"/>
+				<Spring/>
+				<TextButton Name="ContactUs" Background="#FFFFFF" SizePolicy="Auto;Fix" Height="20" Text="@GrammarFeedback" FontSize="13" TextColor="#666666;#333333" FontFamily="微软雅黑"/>
+				<Space Size="34"/>
+				<IconButton Name="GrammarWinMini" Background="#FFFFFF" SizePolicy="Fix;Fix"  Width="16" Height="16" IconWidth="14" IconHeight="1" Icon="minimum.png;minimum-hover.png"/>
+				<Space Size="22"/>
+				<FlipIconButton Name="GrammarWinMax" Background="#FFFFFF" SizePolicy="Fix;Fix"  Width="16" Height="16" Flip="False" IconWidth="13" IconHeight="13" Icon="doc-result-max.png;doc-result-max-hover.png" FlipIcon="doc-mini-max.png;doc-mini-max-hover.png" AutoFlip="False"/>
+				<Space Size="22"/>
+				<IconButton Name="GrammarWinClose" Background="#FFFFFF" SizePolicy="Fix;Fix"  Width="16" Height="16" IconWidth="13" IconHeight="13" Icon="close.png;close-hover.png"/>
+				<Space Size="24"/>
+			</HBoxLayout>
+			<VBoxLayout Name="GrammarTopFrame" SizePolicy="Spring;Fix" Height="1" Background="#E5E5E5"/>			
+			<HBoxLayout Name="ydGrammarContentPart" SizePolicy="Spring;Spring">
+				<VBoxLayout Name="GrammarLeftFrame" SizePolicy="Fix;Spring" Width="3" Background="#FFFFFF"/>
+					<CefWnd Name="GrammarContent" WndClass="YdDocResultWnd" SizePolicy="Spring;Spring" MinWidth="820" MinHeight="530" StartPage="http://cidian.youdao.com/grammar/index.html#/index"/>
+				<VBoxLayout Name="GrammarRightFrame" SizePolicy="Fix;Spring" Width="3" Background="#FFFFFF"/>
+			</HBoxLayout>
+			<VBoxLayout Name="GrammarBottomFrame" SizePolicy="Spring;Fix" Height="3" Background="#FFFFFF"/>
+		</VBoxLayout>
+	</Layout>
+</DocResultWnd>

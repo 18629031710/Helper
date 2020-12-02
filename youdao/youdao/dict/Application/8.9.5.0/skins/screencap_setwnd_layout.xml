@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ScreenCapWnd>
+	<Version>1.0</Version>
+	<WinHeight>65</WinHeight>
+	<WinWidth>330</WinWidth>
+	<Layout>
+		<VBoxLayout Name="RootLayout" SizePolicy="Spring;Spring" Background="#333333">
+		<Frame Name="ScreenCapSetFrame" SizePolicy="Spring;Spring">
+			<HBoxLayout Name="ScreenCapLangIndicatorArea" Shared="True" SizePolicy="Spring;Fix" Height="14" Background="#333333">
+				<PushAttr Icon="screencap-lang-normal.png;screencap-lang-hover.png" IconMargin="8" IconAlign="Left"/>
+				<PushAttr TextAlign="Left" FontFamily="微软雅黑" TextMargin="0" FontSize="13" TextColor="#B3B3B3;#FFFFFF"/>
+				<Space Size="16"/>
+				<TextButton Name="ScreenCapLangSrcIndicator" Background="#333333" IconWidth="8" IconHeight="4" SizePolicy="Auto;Auto" Text="@LangAuto"/>
+				<Space Size="16"/>
+				<PopAttr Icon="" IconMargin="" IconAlign=""/>
+				<PopAttr TextAlign="" FontFamily="" TextMargin="" FontSize="" TextColor=""/>
+			</HBoxLayout>
+			
+			<HBoxLayout Name="ScreenCapSetOri" SizePolicy="Spring;Spring" Height="41">
+			<PushAttr SizePolicy="Auto;Auto" IconAlign="Center;Bottom"/>
+				<Space Size="16"/>
+				<IconButton Name="Refresh" Background="#333333" Width="17" Height="17" IconWidth="17" IconHeight="17" Icon="screencap-refresh-normal.png;screencap-refresh-hover.png"/>
+				<Space Size="14"/>
+				<IconButton Name="SetClose" Background="#333333" Icon="screencap-close-normal.png;screencap-close-hover.png" Width="16" Height="16"/>
+				<Space Size="16"/>
+			</HBoxLayout>
+			
+			<HBoxLayout Name="ScreenCapSetRes" SizePolicy="Spring;Spring" Height="28">
+			<PushAttr SizePolicy="Auto;Auto" IconAlign="Center;Bottom"/>
+			    <Space Size="16"/>
+				<CheckBox Name="OriginalModelCheck" Icon="screencap-switch-off.png" CheckedIcon="screencap-switch-on.png" Height="13" IconMargin="0" IconHeight="13" IconWidth="24" Checked="True"/>
+				<Space Size="8"/>
+				<TextButton Name="OriginalModel" SizePolicy="Auto;Auto" Height="12" Text="原图模式" FontFamily="微软雅黑" FontSize="13" TextColor="#B3B3B3"/>
+				<Space Size="20"/>
+				<TextButton Name="ContentOri" SizePolicy="Auto;Auto" Text="@ScreenCapContentOri" FontFamily="微软雅黑" FontSize="13" TextColor="#B3B3B3;#FFFFFF"/>
+				<Space Size="16"/>
+				<Separator Height="21" Width="1" Background="#555555"/>
+				<Ref Name="ScreenCapLangIndicatorArea"/>
+				<Separator Height="21" Width="1" Background="#555555"/>
+				<Space Size="16"/>
+				<IconButton Name="Copy" Background="#333333" Width="21" Height="21" IconWidth="18" IconHeight="18" Icon="screencap-copy.png;screencap-copy-hover.png" ToolTip="@SCRButtonCopy"/>
+				<Space Size="15"/>
+				<IconButton Name="Edit" Background="#333333" Width="18" Height="18" IconWidth="15" IconHeight="16" Icon="screencap-edit-normal.png;screencap-edit-hover.png" ToolTip="@SCRButtonEdit"/>
+				<Space Size="15"/>
+				<IconButton Name="Refresh" Background="#333333" Width="17" Height="17" IconWidth="17" IconHeight="17" Icon="screencap-refresh-normal.png;screencap-refresh-hover.png" ToolTip="@SCRButtonReCap"/>
+				<Space Size="14"/>
+				<IconButton Name="SetClose" Background="#333333" Icon="screencap-close-normal.png;screencap-close-hover.png" Width="16" Height="16" ToolTip="@SCRButtonExit"/>
+				<Space Size="16"/>
+			</HBoxLayout>
+		</Frame>
+		<LangSelect Name="ScreenCapLangSelWnd" SizePolicy="Fix;Fix" Buddy="ScreenCapLangSrcIndicator" Float="Bottom" Style="Popup" Distance="23" Height="94" Width="337" Layout="lang_select_screencap_layout.xml" Visible="False"/>
+		
+		</VBoxLayout>
+	</Layout>
+</ScreenCapWnd>

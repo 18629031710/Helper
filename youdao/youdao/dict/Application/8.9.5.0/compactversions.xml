@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<versions>
+	<main>5</main>
+	<modules>
+		<module><name>Acrobat2Dict.dll</name><ver>2</ver></module>
+		<module><name>RunDict.exe</name><ver>3</ver></module>
+		<module><name>TextExtractor2.dll</name><ver>2</ver></module>
+		<module><name>WordBook.exe</name><ver>2</ver></module>
+		<module><name>YodaoDict.api</name><ver>2</ver></module>
+		<module><name>YodaoDict.exe</name><ver>5</ver></module>
+		<module><name>YodaoOcr.exe</name><ver>2</ver></module>
+		<module><name>res</name><ver>2</ver></module>
+		<module><name>resultui</name><ver>4</ver></module>
+		<module><name>skins</name><ver>2</ver></module>
+		<module><name>tessdata</name><ver>1</ver></module>
+		<module><name>tessdll.dll</name><ver>2</ver></module>
+		<module><name>uninst.exe</name><ver>5</ver></module>
+	</modules>
+</versions>

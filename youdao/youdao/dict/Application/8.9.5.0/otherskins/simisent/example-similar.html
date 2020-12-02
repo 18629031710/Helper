@@ -1,0 +1,97 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>相似例句 - 有道词典</title>
+    <link href="css/dict.css" rel="stylesheet" type="text/css"/>
+    <link href="css/similar.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+        window.onerror = function () {
+            return true;
+        };
+    </script>
+</head>
+<body style="overflow-y:visible;overflow-x:hidden">
+<div id="similarResults">
+	<div id="actionTips" style="display:none">
+        <div class="at-container">正在查询……</div>
+    </div>							
+    <div class="nav">
+        <form method="" action="" class="s-search" id="search" onsubmit="return KeyDown()">
+            <span class="rea-bg"></span>
+            <div class="search-inpt">
+                <input type="text" class="s-inpt" name="query" id="query" maxlength="256">
+            </div>
+            <span class="s-btn">
+                <a class="s-btn" id="qb" value="搜 索"></a>
+                <input type="hidden" name="keyfrom" value="">
+            </span>
+        </form>
+        <div class="sen-nav">
+            <span class="page">第<span class="cur-sen">0</span>/<span class="total-sen">0</span>句</span>
+            <span class="rel-sen"><a class="pre">上一句</a><a class="next">下一句</a></span>
+        </div>
+    </div>
+    <div id="offline" class="offline" style="display:none">
+        <ul>
+            <li>抱歉，离线模式下不</li><li>能使用参考例句功能，</li>
+            <li>请检查您的网络连接</li><li>或代理设置</li>
+        </ul>
+    </div>
+    <div id="puzzle-phrase"  class="trans-wrapper puzzle-phrase" style="display:none">
+    </div>
+    <div id="refer-sen" class="trans-wrapper" style="display:none">
+        <h3 id="example-tab">
+            <span class="tab-current"><span>双语例句</span></span>
+            <div class="tail"></div>
+        </h3>
+        <div id="example" class="trans-container has-refer">
+        <p id="isSim" class="additional">以下例句部分匹配您查询的内容</p>
+        <ul class="ol">
+        </ul>
+    		</div>
+        <div class="no-refer" class="trans-wrapper">
+        <p id="no-refer-title" class="additional">您选中的内容太长，没有匹配的例句，您可以尝试以下方法获得更多结果：</p>
+        <!--p class="seek-help" ><a href="#" rel="no-follow">查看帮助</a></p-->
+        <ul>
+            <li>
+                <img alt="方法一： 选中句子的一部分。"
+                     src="images/fangfa1.png" />
+                <div class="help">
+                    <p class="help-title">方法一：</p>
+                    <p class="help-content"> 选中句子的一部分。</p>
+                </div>
+            </li>
+            <li>
+                <img alt="方法二： 在上方输入框直接输入！"
+                     src="images/fangfa2.png" />
+                <div class="help">
+                    <p class="help-title">方法二：</p>
+                    <p class="help-content"> 在上方输入框直接输入。</p>
+                </div>
+            </li>
+        </ul>
+        <div class="more-help">
+        		<p>短句比长句更容易得到参考例句结果！</p>
+        </div>
+    		</div>
+    		
+		    <div class="isUseful">以上信息对我<a id="useful" href="javascript:void(0);" hidefocus="true">有用</a>
+		    	<a id="no-useful" href="javascript:void(0);" hidefocus="true">没用</a>
+		    	<p id="feedback">感谢您的反馈 </p>
+				</div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="default.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            init();
+            //sendData('all=3####cur=1####1=国家发展和改革委员会、卫生部、财政部、人力资源和社会保障部、民政部、保险监督管理委员会《关于开展城乡居民大病保险工作的指导意见》8月30日正式公布####2=数据挖掘技术####3=多媒体技术');
+            //sendData('all=1####cur=1####1=宜家');
+        });
+    </script>
+    
+</body>
+</html>

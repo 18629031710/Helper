@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<POPO>
+    <control>
+        <!--标题栏-->
+        <CloseCaption type="caption" css="CloseCaption" ass="caption public">
+            <SysButtonClose type="button" css="systemBtn MainFormClose" ass="sysbutton close"/>
+            <SysButtonMin type="button" css="systemBtn MainFormMin" ass="sysbutton min1"/>
+        </CloseCaption>
+		
+		<OKAndCanel type="panel" css="public" ass="common OKAndCancel">
+            <PanelCancel type="panel" css="public" DockStyle="right" bounds="0,0,84,32" Margin="12,0,0,0">
+                <CancelButton type="button" css="common whiteRound" DockStyle="fill" StrID="STRID_CANCEL"/>
+            </PanelCancel>
+            <OKButton type="button" css="common blueRound" DockStyle="right" bounds="0,0,72,32" StrID="STRID_OK"/>
+        </OKAndCanel>
+		
+        <FormCaption_MAIN type="MainCaption" css="mainform" ass="FormCaption_MAIN">
+            <SysButtonClose type="button" css="systemBtn MainFormClose" ass="FormCaption_MAIN RightButton"/>
+            <SysButtonMax type="button" css="systemBtn MainFormMax" ass="FormCaption_MAIN RightButton"/>
+            <SysButtonRestore type="button" css="systemBtn MainFormRestore" visible="false" ass="FormCaption_MAIN RightButton"/>
+            <SysButtonMin type="button" css="systemBtn MainFormMin" ass="FormCaption_MAIN RightButton"/>
+            <SysButtonMenu type="button" css="systemBtn MainFormMenu" ass="FormCaption_MAIN RightButton"/>
+        </FormCaption_MAIN>
+
+    </control>
+
+
+    <!-- -->
+    <ProgressForm type="form" css="ProgressForm" ass="form public">
+        <FormCaption type="control" control="CloseCaption"/>
+        <Client type="panel" css="public" ass="panel client1">
+		    <PanelBottomFinish type="panel" css="public" ass="common OKAndCancel">
+                <PanelRight type="panel" css="public" DockStyle="right" bounds="0,0,96,50" Margin="24,0,0,0">
+                    <OpenButton type="button" css="common whiteRound" DockStyle="fill" StrID="STRID_OPEN" bounds = "0,0,72,32"/>
+                </PanelRight>
+                <OpenDirButton type="button" css="common blueRound" DockStyle="right" bounds="0,0,90,32" StrID="STRID_OPEN_DIR"/>
+            </PanelBottomFinish>
+            <PanelBottomNormal type="control" control="OKAndCanel"/>
+			<LabelDes type="label" css="public" ass="ProgressForm Client LabelMsg"/>
+			<ProgressBar type="progressbar" css="public" ass="ProgressForm Client ProgressBar"/>       
+        </Client>
+    </ProgressForm>
+</POPO>

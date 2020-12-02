@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<WBSetting>
+	<Version>1.0</Version>
+	<WinHeight>150</WinHeight>
+	<WinWidth>130</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		
+		<VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<MenuItem Name="WBSettingMng" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBSettingMng" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+			<MenuItem Name="WBSettingCategory" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBSettingCategory" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+			<MenuItem Name="WBSettingAdd" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBSettingAdd" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+			<MenuItem Name="WBSettingIO" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBSettingIO" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<MenuItem Name="WBSettingLike" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBSettingLike" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<Spring/>
+		</VBoxLayout>
+		
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</WBSetting>

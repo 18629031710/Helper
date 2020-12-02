@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<StrokeWnd>
+	<Version>1.0</Version>
+	<WinHeight>72</WinHeight>
+	<WinWidth>328</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		
+		<VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<Frame SizePolicy="Spring;Auto" Name="TitleFrame">
+				<VBoxLayout Name="TitleHide" SizePolicy="Spring;Fix" Height="30" Background="#D20A0A"/>
+				<VBoxLayout Name="StrokeTitle" SizePolicy="Spring;Fix" Height="30" Background="#FAFAFA">
+				    <HBoxLayout Name="TitleShown" SizePolicy="Spring;Fix" Height="29" Background="#FAFAFA">
+				    	<Space Size="14"/>
+				    	<IconButton Name="StrokeLogo" Width="52" Height="13" Icon="logo_stroke.png" Enabled="False"/>
+				    	<Space Size="10"/>
+				    	<Separator Width="1" Height="12" Background="#E5E5E5"/>
+				    	<Space Size="10"/>
+				    	<TextButton Name="LangSelector" Background="#FAFAFA" Text="@LangEng" SizePolicy="Auto;Auto" TextAlign="Left" TextMargin="0" TextColor="#666666;#000000" FontFamily="微软雅黑" FontSize="12" Icon="lang-drop.png;lang-drop-hover.png;lang-drop-hover.png;lang-drop-disabled.png" IconWidth="8" IconHeight="4" IconMargin="6" IconAlign="Left"/>
+				    	<Spring/>
+				    	<FlipIconButton Name="StrokeNail" Background="#FAFAFA" Flip="False" FlipIcon="mini-sprig-down.png;mini-sprig-down-hover.png" Icon="mini-sprig.png;mini-sprig-hover.png" Width="15" Height="15" ToolTip="@TipFixWnd"/>
+				    	<Space Size="12"/>
+				    	<IconButton Name="StrokeClose" Background="#FAFAFA" Icon="mini-close.png;mini-close-hover.png" Width="12" Height="12" IconHeight="10" IconWidth="10" ToolTip="@TipClose"/>
+						<Space Size="12"/>
+				        <IconButton Name="StrokeMore" Background="#FAFAFA" Icon="mini-more.png;mini-more-hover.png" Width="4" Height="12" IconWidth="2" IconHeight="10" ToolTip="@TipMoreSample"/>
+				        <Space Size="13"/>
+				    </HBoxLayout>
+					<Separator SizePolicy="Spring;Fix" Height="1" Background="#E5E5E5"/>
+				</VBoxLayout>
+			</Frame>
+			<Space Name="StrokeTitleGap" Size="12"/>
+			<HBoxLayout Name="StrokeEditPart" Height="28" SizePolicy="Spring;Fix">
+				<Space Size="8"/>
+				<HBoxLayout Name="BackgroundArea" Height="28" SizePolicy="Spring;Fix" Background="#F7F8FA">
+				    <Space Size="6"/>
+					<InputBox Name="StrokeInput" SizePolicy="Spring;Fix" Height="13" Background="#00F7F8FA" BackUnfocus="#00F7F8FA" TextColor="#00333333" DefaultText="@InputDefaultText" DefTextColor="#00B3B3B3" FontFamily="微软雅黑" FontSize="13"/>
+				</HBoxLayout>
+				<Space Size="4"/>
+				<IconButton Name="StrokeSearch" Background="#FFFFFF" Width="28" Height="28" Icon="mini-search.png;mini-search-hover.png"/>
+				<Space Size="8"/>
+			</HBoxLayout>
+			<CefWnd Name="StrokeResult" WndClass="YdStrokeCefWnd" SizePolicy="Spring;Spring" MinWidth="326" MinHeight="200" StartPage="frame://html/huaci.html"/>
+			<LangSelect Name="LangSelWnd" Buddy="LangSelector" Float="Bottom" Style="Popup" Distance = "10" Extend="15;0" Height="60" Width="306" Layout="lang_select_layout_simple.xml" Visible="False"/>
+		    <ToolWndMenu Name="ToolWndMenu" SizePolicy="Fix;Fix" Buddy="StrokeMore" Style="Popup" Float="Bottom"  Distance="8" EXtend="15;0" FloatAnchor="74;0" Height="76" Width="128" Layout="toolwnd_menu_layout.xml" Visible="False"/> 		
+		</VBoxLayout>
+		
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</StrokeWnd>

@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--	对文件格式的一些说明  	-->
+<!--	1） 所有的Image都使用(left,top,right,bottom)的模式，其他都使用(X,Y,Width,Height),坐标都是y轴向下 -->
+<!--	2） 控件下都包含公共控件（public）和各个页面单独的控件，后者按首位字母排序，推荐使用ctrl+F：1、“'<' + 页面名 ”或2、“'<' + 页面首位字母”-->
+<!--  3)  Radiobutton 和 CheckBox 两个控件分开来写了-->
+<popo>
+    <!--皮肤数据-->
+    <css>
+
+        <!--Caption_CSS-->
+        <caption>
+
+            <public2 TextStartPosition="26,7" TextHeight="20" IconPosition="5,6">
+                <Font TextColor="255,255,255" redirect="SmallBold" />
+            </public2>
+
+            <mainform TextStartPosition="99999,9" TextHeight="20" IconPosition="12,7">
+                <Font TextColor="255,255,255" FontFace="Arial" FontSize="12" FontBold="F" />
+            </mainform>
+
+            <CloseCaption IconVisible="false" TextStartPosition="16,16" TextHeight="20" IconPosition="5,6">
+                <Font TextColor="33,35,92" redirect="SmallBold"/>
+            </CloseCaption>
+
+            <CaptionWithIcon IconVisible="true" TextStartPosition="34,7" TextHeight="20" IconPosition="12,7">
+                <Font TextColor="255,255,255" redirect="SmallBold"/>
+            </CaptionWithIcon>
+
+            <public_hide TextStartPosition="5555,95555" TextHeight="20" IconPosition="34,6"/>
+
+        </caption>
+
+        <!--Button_CSS-->
+        <button>
+		
+            <!--系统和控件特殊使用的按钮-->
+            <!--系统按钮_关闭-->
+            <SysButtonClose Flat="True">
+                <Image File="\public\Icon_sys_close.png" Normal="0,0,16,16" Focus="0,16,16,32" Press="0,32,16,48" Disable="0,0,16,16"/>
+            </SysButtonClose>
+
+            <!--系统按钮_最小化-->
+            <SysButtonMin Flat="True">
+                <Image File="\public\Icon_sys_min.png" Normal="0,0,16,16" Focus="0,16,16,32" Press="0,32,16,48" Disable="0,0,16,16"/>
+            </SysButtonMin>
+
+            <!--系统按钮_最大化-->
+            <SysButtonMax Flat="True">
+                <Image File="\public\Btn_Window_Max.png" Normal="0,0,16,16" Focus="0,16,16,32" Press="0,32,16,48" Disable="0,0,16,16"/>
+            </SysButtonMax>
+
+
+            <!--公共按钮-->
+            <public Edge="3,3" TextOffset="0,0,0,0" TextHorAlign="1" TextVerAlign="1">
+                <Image redirect="BgBtnGray"/>
+                <Font TextColor="79,94,118" Redirect="Small"/>
+            </public>
+
+            <ButtonOk Edge="3,3" TextOffset="0,0,0,0" TextHorAlign="1" TextVerAlign="1">
+                <Image redirect="BgBtnBlue"/>
+                <Font TextColor="255,255,255" Redirect="Small"/>
+            </ButtonOk>
+            <common>
+                <WhiteRound Edge="12,12" TextOffset="0,0,0,0" TextHorAlign="1" TextVerAlign="1">
+                    <Image File="\public\Btn_White_Mid2.png" btnSliceNum="4"/>
+                    <Font TextColor="85,118,189" Redirect="Small"/>
+                </WhiteRound>
+                
+                <BlueRound Edge="12,12" TextOffset="0,0,0,0" TextHorAlign="1" TextVerAlign="1">
+                    <Image File="\public\Btn_Blue_Mid.png" btnSliceNum="4"/>
+                    <Font TextColor="255,255,255" Redirect="Small"/>
+                </BlueRound>
+
+                <SimpleBlue Flat="false" Edge="3,3" IconOffset="0,0,1,0" TextOffset="0,0,0,0" TextHorAlign="1" DropdownOffset="0,5" ColorTextFocus="255,255,255" ColorTextPress="255,255,255" ColorTextDisable="151,157,169">
+                    <image File="\public\bg_btn_blue4.png" btnSliceNum="4"/>
+                    <Font TextColor="255,255,255"  Redirect="Small"/>
+                </SimpleBlue>
+            </common>
+            
+            <systemBtn>
+                <MainFormClose Flat="true" IconOffset = "8,0,0,0">
+                    <Image redirect="ToolbarBtnBg" />
+                    <Icon File="\public\Icon_sys_close.png" Normal="0,0,32,32" Focus="0,0,32,32" Press="0,0,32,32" Disable="00,0,32,32" DpiScale = "2.0" />
+                </MainFormClose>
+
+                 <MainFormMin Flat="true" IconOffset = "8,0,0,0">
+                    <Image redirect="ToolbarBtnBg" />
+                    <Icon File="\public\Icon_sys_min.png" Normal="0,0,32,32" Focus="0,0,32,32" Press="0,0,32,32" Disable="00,0,32,32" DpiScale = "2.0"/>
+                </MainFormMin>
+            </systemBtn>
+        </button>
+
+        <progressbar>
+            <public MinSize="0" MaxSize="100" progressMargin="8,2,8,14">
+                <ProgressImage file="\public\progress-done.png" left="0,0,8,16" mid="8,0,104,16" right="104,0, 112,16"/>
+                <BkImage file="\public\progress_bk.png" borders="20,0,20,0"/>
+            </public>
+        </progressbar>
+
+        <!--Panel_CSS-->
+        <panel>
+            <public3 BkColor="111,111,121"/>
+            <WhitePanel BkColor="255, 255, 255"/>
+            <BlackPanel BkColor="0,0,0"/>
+        </panel>
+
+        <label>
+            <public Transparent="true" IsAutoFitHor="false" IsAutoFitVer="false" IsHyperLink="false" IsAlwaysShowHyperLine="true" IsAutoOpenURL="false" IsSingleLine="true" TextAlign="0,1" BkColor="255,255,255" HyperColor="0,91,202" ReverseTextColor="255,255,255" ReverseBkColor="0,0,255" BorderColor="0,0,0" BorderWidth="0" IsShowEllipsis="false">
+                <BkImage File="" />
+                <Font FontFace="SimSun" FontSize="12" FontBold="F" TextColor="0,0,0" Redirect="Small" />
+            </public>
+            
+            <caption>
+                <YNoteTextBack Transparent="true" IsAutoFitHor="true" IsSingleLine="true" TextAlign="0,1" >
+                    <Font TextColor="38,101,144" redirect="SmallBold"/>
+                </YNoteTextBack>
+                <YNoteTextFore Transparent="true" IsAutoFitHor="true" IsSingleLine="true" TextAlign="0,1" >
+                    <Font TextColor="255,255,255" redirect="SmallBold"/>
+                </YNoteTextFore>
+                <WindowTextBack IsSingleLine="true" IsAutoFitHor="true"  TextAlign="0,1" IsHyperLink="false">
+                    <Font FontFace="Arial" FontSize="12" FontBold="F" TextColor="38,101,144" Redirect="Small" />
+                </WindowTextBack>
+                <WindowTextFore IsSingleLine="true" IsAutoFitHor="true" TextAlign="0,1" IsHyperLink="true" IsAlwaysShowHyperLine="false" IsAutoOpenURL="false" HyperColor="255,255,255">
+                    <Font FontFace="Arial" FontSize="12" FontBold="F" TextColor="255,255,255" Redirect="Small"/>
+                </WindowTextFore>
+
+            </caption>
+
+            
+
+
+            <common>
+                <ErrorRemind Transparent="true" IsAutoFitHor="false" IsAutoFitVer="false" IsHyperLink="false" IsAlwaysShowHyperLine="false" IsAutoOpenURL="false" IsSingleLine="true" TextAlign="0,1" BkColor="255,255,255" HyperColor="0,91,202" ReverseTextColor="255,255,255" ReverseBkColor="0,0,255" BorderColor="0,0,0" BorderWidth="0" IsShowEllipsis="false">
+                    <Font TextColor="229,48,66" redirect="Small"/>
+                </ErrorRemind>
+                <BottomText Transparent="true" IsAutoFitHor="false" IsAutoFitVer="false" IsHyperLink="false" IsAlwaysShowHyperLine="true" IsAutoOpenURL="false" IsSingleLine="true" TextAlign="0,1" BkColor="255,255,255" HyperColor="0,91,202" ReverseTextColor="255,255,255" ReverseBkColor="0,0,255" BorderColor="0,0,0" BorderWidth="0" IsShowEllipsis="false">
+                    <Font TextColor="0,0,0" FontFace="宋体" FontSize="12" FontBold="F" redirect="BlackSmall"/>
+                </BottomText>
+                <Normal Transparent="true" IsAutoFitHor="false" IsAutoFitVer="false" IsHyperLink="false" IsAlwaysShowHyperLine="true" IsAutoOpenURL="false" IsSingleLine="true" TextAlign="0,1" BkColor="255,255,255" HyperColor="0,91,202" ReverseTextColor="255,255,255" ReverseBkColor="0,0,255" BorderColor="0,0,0" BorderWidth="0" IsShowEllipsis="false">
+                    <Font TextColor="0,0,0" redirect="Small"/>
+                </Normal>
+                <LightGray Transparent="true" IsAutoFitHor="false" IsAutoFitVer="false" IsHyperLink="false" IsAlwaysShowHyperLine="true" IsAutoOpenURL="false" IsSingleLine="true" TextAlign="0,1" BkColor="255,255,255" HyperColor="0,91,202" ReverseTextColor="255,255,255" ReverseBkColor="0,0,255" BorderColor="0,0,0" BorderWidth="0" IsShowEllipsis="false">
+                    <Font TextColor="153,153,153" redirect="Small"/>
+                </LightGray>
+
+                <Gray Transparent="true" IsAutoFitHor="false" IsAutoFitVer="false" IsHyperLink="false" IsAlwaysShowHyperLine="true" IsAutoOpenURL="false" IsSingleLine="true" TextAlign="0,1" BkColor="255,255,255" HyperColor="0,91,202" ReverseTextColor="255,255,255" ReverseBkColor="0,0,255" BorderColor="0,0,0" BorderWidth="0" IsShowEllipsis="false">
+                    <Font TextColor="79, 79, 79" redirect="Small"/>
+                </Gray>
+
+                <linkBlue Transparent="true" IsAutoFitHor="false" IsAutoFitVer="false" IsHyperLink="true" IsAlwaysShowHyperLine="false" IsAutoOpenURL="false" IsSingleLine="true" TextAlign="0,1" BkColor="255,255,255" HyperColor="0,91,202" ReverseTextColor="255,255,255" ReverseBkColor="0,0,255" BorderColor="0,0,0" BorderWidth="0" IsShowEllipsis="false">
+                    <BkImage File="" />
+                    <Font TextColor="44,130,221" Redirect="Small" />
+                </linkBlue>
+
+            </common>
+        </label>
+
+ 
+        <!--Form_CSS-->
+        <form>
+            <!--各个form用-->
+            <ProgressForm PositionRect="0,0,400,190" MaxSize="0,0" MinSize="256,100" Resize="false" Icon="" BorderMargin="1,0,1,1">
+                <Image redirect="FormBkPopup"/>
+            </ProgressForm>
+
+        </form>
+
+
+
+    </css>
+    <!--定位数据-->
+    <ass>
+        <!--ASS标题栏-->
+        <caption>
+            <public DockStyle="top" Bounds="0,0,0,48" Margin="0,8,8,8"/>
+        </caption>
+		
+        <!-- 一些常用的dockstyle -->
+        <common>
+            <fill DockStyle="fill"/>
+            <top DockStyle="top"/>
+            <bottom DockStyle="bottom"/>
+            <left DockStyle="left"/>
+            <right DockStyle="right"/>
+
+            <OKAndCancel DockStyle="bottom" Bounds="0,0,0,34" Margin="0,0,0,0">
+                <OKButton DockStyle="left" Bounds="0,0,72,32" StrID="STRID_OK"/>
+                <CancelButton DockStyle="right" Bounds="0,0,72,32" StrID="STRID_CANCEL"/>
+                <OKButtonRight DockStyle="right" Bounds="0,0,72,32" StrID="STRID_OK"/>
+            </OKAndCancel>
+        </common>
+
+        <!--ASS系统按钮-->
+        <sysbutton>
+            <close AnchorStyle="topright" Bounds="-7,5,32,32" />
+            <max AnchorStyle="topright" Bounds="-30,5,16,16" />
+            <restore AnchorStyle="topright" Bounds="-30,5,16,16" />
+            <min1 AnchorStyle="topright" Bounds="-46,5,32,32" />
+        </sysbutton>
+
+        <!--ASS窗口-->
+        <form>
+            <public />
+        </form>
+
+        <panel>
+            <client Dockstyle="fill" Margin="0,0,0,0"/>
+            <client1 Dockstyle="fill" Margin="18,18,18,18"/>
+            <bottom Dockstyle="bottom" Bounds="0,0,0,36" Margin="0,12,0,0"/>
+            <panelbottom Dockstyle="bottom" Bounds="0,0,0,60" Margin="18,18,18,18"/>
+        </panel>
+
+        <ProgressForm>
+            <Client>
+			    <ProgressBar DockStyle="top" Bounds="0,0,0,32" />
+                <LabelMsg DockStyle="top" Bounds="0,0,0,32"/>
+				
+            </Client>
+        </ProgressForm>
+		
+        <FormCaption_MAIN DockStyle="top" Bounds="0,0,0,40" Margin="0,0,0,0">
+            <RightButton DockStyle="right" Bounds="0,0,40,0"/>
+        </FormCaption_MAIN>
+    </ass>
+
+    <ynotefonts>
+        <!-- if you set font in testfont, then the yaheifont and noyaheifont will be invalid-->
+        <testfont>
+            <yaheifont FontFace="微软雅黑" FontSize="18" TextColor="0,0,0"/>
+            <noyaheifont FontFace="宋体" FontSize="12" TextColor="0,0,0"/>
+        </testfont>
+        <FontSize20>
+            <yaheifont FontFace="微软雅黑" FontSize="24"/>
+            <noyaheifont FontFace="宋体" FontSize="20"/>
+        </FontSize20>
+        <Small>
+            <yaheifont FontFace="微软雅黑" FontSize="18"/>
+            <noyaheifont FontFace="宋体" FontSize="12"/>
+        </Small>
+        <NumberSmall>
+            <yaheifont FontFace="微软雅黑" FontSize="16"/>
+            <noyaheifont FontFace="宋体" FontSize="10"/>
+        </NumberSmall>
+
+        <Medium>
+            <yaheifont FontFace="微软雅黑" FontSize="19"/>
+            <noyaheifont FontFace="宋体" FontSize="13"/>
+        </Medium>
+
+        <Large>
+            <yaheifont FontFace="微软雅黑" FontSize="20"/>
+            <noyaheifont FontFace="宋体" FontSize="14"/>
+        </Large>
+        <SmallBold>
+            <yaheifont FontFace="微软雅黑" FontSize="18" FontBold="T"/>
+            <noyaheifont FontFace="宋体" FontSize="12" FontBold="T"/>
+        </SmallBold>
+        <LargeBold>
+            <yaheifont FontFace="微软雅黑" FontSize="20" FontBold="T"/>
+            <noyaheifont FontFace="宋体" FontSize="14" FontBold="T"/>
+        </LargeBold>
+        <BlackSmall>
+            <yaheifont FontFace="微软雅黑" FontSize="18" TextColor="0,0,0"/>
+            <noyaheifont FontFace="宋体" FontSize="12" TextColor="0,0,0"/>
+        </BlackSmall>
+        <NoteInfo>
+            <yaheifont FontFace="微软雅黑" FontSize="18" TextColor="134,133,133"/>
+            <noyaheifont FontFace="宋体" FontSize="12" TextColor="134,133,133"/>
+        </NoteInfo>
+        <BlackLarge>
+            <yaheifont FontFace="微软雅黑" FontSize="20" TextColor="0,0,0"/>
+            <noyaheifont FontFace="宋体" FontSize="14" TextColor="0,0,0"/>
+        </BlackLarge>
+        <WhiteSmall>
+            <yaheifont FontFace="微软雅黑" FontSize="18" TextColor="255,255,255"/>
+            <noyaheifont FontFace="宋体" FontSize="12" TextColor="255,255,255"/>
+        </WhiteSmall>
+    </ynotefonts>
+
+    <ynoteimage>
+        <AddTag File="public\Btn_Add_Tag.png" Normal="0,0,18,18" Focus="18,0,36,18" Press="36,0,54,18" Disable="54,0,72,18"/>
+        <AddTagFirst File="public\Btn_Add_Tag_First.png" Normal="0,0,18,18" Focus="18,0,36,18" Press="36,0,54,18" Disable="54,0,72,18"/>
+        <DropDown File="public\Btn_DropDown.png" Normal="0,0,6,5" Focus="0,0,6,5" Press="0,0,6,5" Disable="0,0,6,5"/>
+        <DropDownTag File="public\Btn_DropDown_Tag.png" Normal="0,0,18,24" Focus="0,0,18,24" Press="0,0,18,24" Disable="0,0,18,24"/>
+        <SysButton>
+            <BtnWindowClose File="\public\Btn_Window_Close.png" Normal="0,0,20,20" Focus="20,0,40,20" Press="40,0,60,20"/>
+            <BtnWindowMin File="\public\Btn_Window_Min.png" Normal="0,0,20,20" Focus="20,0,40,20" Press="40,0,60,20"/>
+        </SysButton>
+        <Checkbox2 File="\public\Check_2.png" Blend="t" UncheckNormal="0,0,18,18" UncheckHover="0,0,18,18" CheckNormal="18,0,36,18" CheckHover="18,0,36,18" UncheckDisable="0,0,18,18" CheckDisable="18,0,36,18"/>
+        <Checkbox1 File="\public\Check_1.png" Blend="t" UncheckNormal="0,0,16,16" UncheckHover="0,0,16,16" CheckNormal="16,0,32,16" CheckHover="16,0,32,16" UncheckDisable="0,0,16,16" CheckDisable="16,0,32,16"/>
+        <InputCheck File="public\Input_Check.png" UncheckNormal="0,0,12,12" UncheckHover="0,0,12,12" CheckNormal="12,0,24,12" CheckHover="12,0,24,12" UncheckDisable="0,0,12,12" CheckDisable="12,0,24,12"/>
+        <BgBtnGreen File="\public\Bg_Btn_Green.png" Normal="0,0,90,31" Focus="90,0,180,31" Press="180,0,270,31" Disable="270,0,360,31" KBFocus="0,0,90,31"/>
+        <BgBtnGray File="\public\Bg_Btn_Gray.png" Normal="0,0,42,24" Focus="42,0,84,24" Press="84,0,126,24" Disable="126,0,168,24" KBFocus="0,0,42,24"/>
+        <BgBtnGrayBig File="\public\Bg_Btn_Gray_Big.png" Normal="0,0,90,31" Focus="90,0,180,31" Press="180,0,270,31" Disable="270,0,360,31" KBFocus="0,0,90,31"/>
+        <BgBtnBlue File="\public\Bg_Btn_Blue.png" Normal="0,0,42,24" Focus="42,0,84,24" Press="84,0,126,24" Disable="126,0,168,24" KBFocus="0,0,42,24"/>
+        <FormBkPopup File="\public\FormBk_Popup.png" borders="4,4,4,4" HighQualityRender="False" >
+        </FormBkPopup>
+
+        <FormBkSyncInfo File="\public\Menu_Bk.png" ColorKey="255,0,0">
+            <EdgeTop left="0,0,2,2" mid="2,0,134,2" right="134,0,136,2"/>
+            <EdgeLeft mid="0,2,50,13" />
+            <EdgeCenter mid="50,2,100,13" />
+            <EdgeRight mid="100,2,136,13" />
+            <EdgeBottom left="0,13,2,15" mid="2,13,134,15" right="134,13,136,15"/>
+        </FormBkSyncInfo>
+
+
+        <LoginForm>
+            <BtnUserDown File="\public\Btn_User_Down.png" Normal="0,0,20,36" Focus="0,0,20,36" Press="0,0,20,36" Disable="0,0,20,36" />
+            <BgReg File="public\Bg_Login.png">
+                <EdgeTop left="0,0,100,50" mid="100,0,500,50" right="500,0,600,50"/>
+                <EdgeLeft mid="0,50,50,300"/>
+                <EdgeCenter mid="50,50,550,300"/>
+                <EdgeRight mid="550,50,600,300"/>
+                <EdgeBottom left="0,300,100,450" mid="100,300,500,450" right="500,300,600,450"/>
+            </BgReg>
+            <BtnLogin File="\public\Btn_Login_Normal_Over_Down.png" Normal="0,0,122,39" Focus="122,0,244,39" Press="244,0,366,39"/>
+            <BtnRegister File="public\Btn_Login2Reg_Normal_Over_Down.png" Normal="0,0,92,38" Focus="92,0,184,38" Press="184,0,276,38"/>
+            <BtnReg File="public\Btn_Reg_Normal_Over_Down.png" Normal="0,0,122,39" Focus="122,0,244,39" Press="244,0,366,39"/>
+            <BtnLoginSina File="\public\Btn_Login_Weibo.png" Normal="0,0,180,36" Focus="0,36,180,72" Press="0,72,180,108"/>
+            <BtnLoginQQ File="\public\Btn_Login_QQ.png" Normal="0,0,180,36" Focus="0,36,180,72" Press="0,72,180,108"/>
+            <BtnLoginQQT File="\public\Btn_Login_QQT.png" Normal="0,0,180,36" Focus="0,36,180,72" Press="0,72,180,108"/>
+            <BtnChangeVerify File="\public\Btn_Change_Verify.png" Normal="0,0,84,36" Focus="84,0,168,36" Press="168,0,252,36"/>
+            <BtnBack2Login File="public\Btn_Back_2_Login.png" Normal="0,0,84,36" Focus="84,0,168,36" Press="168,0,252,36"/>
+            <LoginLogo File="\public\Image_Login_Logo.png" Rect="0,0,210,96"/>
+
+            <LoginNameInputFocus File="\public\Input_Login_Normal_Focus.png">
+                <EdgeTop left="240,0,245,5" mid="245,0,475,5" right="475,0,480,5"/>
+                <EdgeLeft mid="240,5,245,31"/>
+                <EdgeCenter mid="245,5,475,31"/>
+                <EdgeRight mid="475,5,480,31"/>
+                <EdgeBottom left="240,31,245,36" mid="245,31,475,36" right="475,31,480,36"/>
+            </LoginNameInputFocus>
+            <LoginNameInputNormal File="\public\Input_Login_Normal_Focus.png">
+                <EdgeTop left="0,0,5,5" mid="5,0,235,5" right="235,0,240,5"/>
+                <EdgeLeft mid="0,5,5,31"/>
+                <EdgeCenter mid="5,5,235,31"/>
+                <EdgeRight mid="235,5,240,31"/>
+                <EdgeBottom left="0,31,5,36" mid="5,31,235,36" right="235,31,240,36"/>
+            </LoginNameInputNormal>
+            <LoginNameInputDisable File="\public\Input_Normal_Focus_Disabled.png">
+                <EdgeTop left="400,0,405,5" mid="405,0,595,5" right="595,0,600,5"/>
+                <EdgeLeft mid="400,5,405,25"/>
+                <EdgeCenter mid="405,5,595,25"/>
+                <EdgeRight mid="595,5,600,25"/>
+                <EdgeBottom left="400,25,405,30" mid="405,25,595,30" right="595,25,600,30"/>
+            </LoginNameInputDisable>
+            <LoginInputFocus File="\public\Input_Login_Normal_Focus.png">
+                <EdgeTop left="240,0,245,5" mid="245,0,475,5" right="475,0,480,5"/>
+                <EdgeLeft mid="240,5,245,31"/>
+                <EdgeCenter mid="245,5,475,31"/>
+                <EdgeRight mid="475,5,480,31"/>
+                <EdgeBottom left="240,31,245,36" mid="245,31,475,36" right="475,31,480,36"/>
+            </LoginInputFocus>
+            <LoginInputNormal File="\public\Input_Login_Normal_Focus.png">
+                <EdgeTop left="0,0,5,5" mid="5,0,235,5" right="235,0,240,5"/>
+                <EdgeLeft mid="0,5,5,31"/>
+                <EdgeCenter mid="5,5,235,31"/>
+                <EdgeRight mid="235,5,240,31"/>
+                <EdgeBottom left="0,31,5,36" mid="5,31,235,36" right="235,31,240,36"/>
+            </LoginInputNormal>
+            <LoginInputDisable File="\public\Input_Normal_Focus_Disabled.png">
+                <EdgeTop left="400,0,405,5" mid="405,0,595,5" right="595,0,600,5"/>
+                <EdgeLeft mid="400,5,405,25"/>
+                <EdgeCenter mid="405,5,595,25"/>
+                <EdgeRight mid="595,5,600,25"/>
+                <EdgeBottom left="400,25,405,30" mid="405,25,595,30" right="595,25,600,30"/>
+            </LoginInputDisable>
+            <BtnUserDownMailCombox File="public\Btn_User_Down_Mail_Combox.png" Normal="0,0,18,25" Focus="0,0,18,25" Press="0,0,18,25" Disable="0,0,18,25" />
+        </LoginForm>
+        <InputImageNormal File="\public\Input_Normal_Focus_Disabled_SML.png">
+            <EdgeTop left="0,0,5,4" mid="5,0,195,4" right="195,0,200,4"/>
+            <EdgeLeft mid="0,4,5,23"/>
+            <EdgeCenter mid="5,4,195,23"/>
+            <EdgeRight mid="195,4,200,23"/>
+            <EdgeBottom left="0,23,5,24" mid="5,23,195,24" right="195,23,200,24"/>
+        </InputImageNormal>
+        <InputImageFocus File="\public\Input_Normal_Focus_Disabled_SML.png">
+            <EdgeTop left="200,0,205,4" mid="205,0,395,4" right="395,0,400,4"/>
+            <EdgeLeft mid="200,4,205,23"/>
+            <EdgeCenter mid="205,4,395,23"/>
+            <EdgeRight mid="395,4,400,23"/>
+            <EdgeBottom left="200,23,205,24" mid="205,23,395,24" right="395,23,400,24"/>
+        </InputImageFocus>
+        <InputImageHover File="\public\Input_Normal_Focus_Disabled_SML.png">
+            <EdgeTop left="200,0,205,4" mid="205,0,395,4" right="395,0,400,4"/>
+            <EdgeLeft mid="200,4,205,23"/>
+            <EdgeCenter mid="205,4,395,23"/>
+            <EdgeRight mid="395,4,400,23"/>
+            <EdgeBottom left="200,23,205,24" mid="205,23,395,24" right="395,23,400,24"/>
+        </InputImageHover>
+        <InputImageDisable File="\public\Input_Normal_Focus_Disabled_SML.png">
+            <EdgeTop left="400,0,405,4" mid="405,0,595,4" right="595,0,600,4"/>
+            <EdgeLeft mid="400,4,405,23"/>
+            <EdgeCenter mid="405,4,595,23"/>
+            <EdgeRight mid="595,4,600,23"/>
+            <EdgeBottom left="400,23,405,24" mid="405,23,595,24" right="595,23,600,24"/>
+        </InputImageDisable>
+        <InputImageReadOnly File="\public\Input_Normal_Focus_Disabled_SML.png">
+            <EdgeTop left="400,0,405,4" mid="405,0,595,4" right="595,0,600,4"/>
+            <EdgeLeft mid="400,4,405,23"/>
+            <EdgeCenter mid="405,4,595,23"/>
+            <EdgeRight mid="595,4,600,23"/>
+            <EdgeBottom left="400,23,405,24" mid="405,23,595,24" right="595,23,600,24"/>
+        </InputImageReadOnly>
+        <ProgressBarFill File="public\Bg_Progress_Done-12.png"  left="0,0,2,12" mid="2,0,98,12" right="98,0,100,12"/>
+        <ProgressBarBack File="public\Bg_Progress-12.png"  left="0,0,2,12" mid="2,0,98,12" right="98,0,100,12"/>
+
+        <InputSecret File="\public\Input_Secret.png">
+            <EdgeTop left="0,0,2,4" mid="2,0,195,4" right="196,0,198,4"/>
+            <EdgeLeft mid="0,4,2,28"/>
+            <EdgeCenter mid="2,4,195,28"/>
+            <EdgeRight mid="196,4,198,23"/>
+            <EdgeBottom left="0,29,2,31" mid="2,29,195,31" right="196,29,198,31"/>
+        </InputSecret>
+
+        <ToolbarBtnBg File="public\btn_bg_toolbar.png" Normal="0,0,0,0" Focus="0,80,80,160" Press="0,160,80,240" Disable="0,240,80,320" />
+
+    </ynoteimage>
+</popo>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<MiniWnd>
+	<Version>1.0</Version>
+	<WinHeight>78</WinHeight>
+	<WinWidth>330</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		
+		<VBoxLayout Name="RootLayout" SizePolicy="Spring;Spring">
+			<HBoxLayout Name="TitlePart" SizePolicy="Spring;Fix" Height="30" Background="#FAFAFA">
+				<Space Size="14"/>
+				<IconButton Name="MiniLogo" Width="52" Height="13" Icon="logo_mini.png" Enabled="False"/>
+				<Space Size="10"/>
+			    <Separator Width="1" Height="12" Background="#E5E5E5"/>
+				<Space Size="10"/>
+				<TextButton Name="LangSelector" Background="#FAFAFA" Text="@LangEng" SizePolicy="Auto;Auto" TextAlign="Left" TextMargin="0" TextColor="#666666;#000000" FontFamily="微软雅黑" FontSize="12" Icon="lang-drop.png;lang-drop-hover.png;lang-drop-hover.png;lang-drop-disabled.png" IconWidth="8" IconHeight="4" IconMargin="6" IconAlign="Left"/>
+				<Spring/>
+				<FlipIconButton Name="MiniNail" Background="#FAFAFA" Flip="False" FlipIcon="mini-sprig-down.png;mini-sprig-down-hover.png" Icon="mini-sprig.png;mini-sprig-hover.png" Width="15" Height="15" ToolTip="@TipFixWnd"/>
+				<Space Size="12"/>
+				<IconButton Name="ShowMainWnd" Background="#FAFAFA" Width="14" Height="14" IconWidth="10" IconHeight="10" Icon="mini-open-main-wnd.png;mini-open-main-wnd-hover.png" ToolTip="@TipToMainWnd"/>
+				<Space Size="12"/>
+				<IconButton Name="MiniClose" Background="#FAFAFA" Icon="mini-close.png;mini-close-hover.png" Width="12" Height="12" IconWidth="10" IconHeight="10" ToolTip="@TipClose"/>
+				<Space Size="12"/>
+				<IconButton Name="MiniMore" Background="#FAFAFA" Icon="mini-more.png;mini-more-hover.png" Width="4" Height="12" IconWidth="2" IconHeight="10" ToolTip="@TipMore"/>
+				<Space Size="13"/>
+			</HBoxLayout>
+			<Separator SizePolicy="Spring;Fix" Height="1" Background="#E5E5E5"/>
+			<HBoxLayout Name="InputPart" SizePolicy="Spring;Fix" Height="46" Background="#FFFFFF">
+				<Space Size="8"/>
+				<VBoxLayout Name="InputArea" SizePolicy="Spring;Fix" Height="46">
+				    <Space Size="9"/>
+					<TextButton Name="TopMargin" SizePolicy="Spring;Fix" Height="5" Background="#F7F8FA" Enabled="False"/>
+					<HBoxLayout Name="MiniInputArea" SizePolicy="Spring;Fix" Background="#F7F8FA"  Height="19">
+					    <Space Size="5"/>
+				        <InputBox Name="MiniInput" SizePolicy="Spring;Fix" Height="19" MaxTextNum="256" Background="#00F7F8FA" BackUnfocus="#00F7F8FA" TextColor="#00333333" DefaultText="@InputDefaultText" DefTextColor="#00B3B3B3" FontFamily="微软雅黑" FontSize="13"/>
+				        <Space Size="6"/>
+						<FlipIconButton Name="MiniHistory" Background="#F5F5F5" Flip="False" FlipIcon="mini-history-up.png;mini-history-up-hover.png" Icon="mini-history-down.png;mini-history-down-hover.png" Width="15" Height="15"/>
+						<Space Size="7"/>
+					</HBoxLayout>
+					<TextButton Name="BottomMargin" SizePolicy="Spring;Fix" Height="4" Background="#F7F8FA" Enabled="False"/>
+					<Space Size="9"/>
+				</VBoxLayout>
+				<Space Size="4"/>
+				<IconButton Name="MiniSearch" Background="#FFFFFF" Width="30" Height="30" IconWidth="28" IconHeight="28" Icon="mini-search.png;mini-search-hover.png"/>
+				<Space Size="8"/>
+			</HBoxLayout>
+			<VBoxLayout Name="ResultPart" SizePolicy="Spring;Spring" Visible="False" Background="#FFFFFF">
+				<CefWnd Name="MiniCefWnd" SizePolicy="Spring;Spring" WndClass="YdMiniCefWnd" MinWidth="330" MinHeight="0" StartPage="frame://html/mini.html"/>
+			</VBoxLayout>
+			<LangSelect Name="LangSelWnd" Buddy="LangSelector" Float="Bottom" Style="Popup" Distance = "10" Extend="15;0" Height="60" Width="306" Layout="lang_select_layout_simple.xml" Visible="False"/>
+		    <ToolWndMenu Name="ToolWndMenu" SizePolicy="Fix;Fix" Buddy="MiniMore" Style="Popup" Float="Bottom"  Distance="8" EXtend="15;0" FloatAnchor="74;0" Height="166" Width="128" Layout="toolwnd_menu_layout.xml" Visible="False"/> 
+		</VBoxLayout>
+		
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</MiniWnd>

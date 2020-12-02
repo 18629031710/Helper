@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<PopupWnd>
+	<Version>1.0</Version>
+	<WinHeight>550</WinHeight>
+	<WinWidth>700</WinWidth>
+	<WinMiniWidth>500</WinMiniWidth>
+	<WinMiniHeight>450</WinMiniHeight>
+	<Layout>
+		<VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<HBoxLayout Name="YdLoginWnd" SizePolicy="Spring;Fix" Height="45">
+				<Space Size="15"/>
+				<TextButton Name="WinName" SizePolicy="Auto;Auto" Text="第三方登录" TextColor="#000000" FontFamily="微软雅黑" FontSize="15" Enabled="False"/>
+				<Spring/>
+				<IconButton Name="LoginClose" Background="#FFFFFF" Icon="loginurl-close.png;loginurl-close-hover.png" Width="16" Height="16"/>
+				<Space Size="15"/>
+			</HBoxLayout>
+			<CefWnd Name="LoginContent" WndClass="YdLoginWnd" SizePolicy="Spring;Spring" MinWidth="100" MinHeight="20"/>
+		</VBoxLayout>
+	</Layout>
+</PopupWnd>

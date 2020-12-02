@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<WBMoveCategory>
+	<Version>1.0</Version>
+	<WinHeight>32</WinHeight>
+	<WinWidth>132</WinWidth>
+	<WinAppendHeight>118</WinAppendHeight>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		
+		<HBoxLayout Name="WBMoveCategoryContent" SizePolicy="Spring;Spring">
+			<ScrollArea Name="WBCategoryList" SizePolicy="Spring;Spring" Background="#FFFFFF">
+				<VBoxLayout Name="RootLayout" SizePolicy="Spring;Spring">
+					<PushAttr SizePolicy="Fix;Spring" Width="130"/>
+					<MenuItem Name="WBNoCategory" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBNoCategory" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+					<Spring/>
+					<TextButton Text=""/>
+					<PopAttr SizePolicy=""/>
+				</VBoxLayout>
+			</ScrollArea>
+			<ScrollBar Name="WBCategoryScrollBar" SizePolicy="Fix;Spring" Width="8" Type="Vertical" Background="#FFFFFF" BarColor="#D6D6D6;#C1C1C1" Delta="5"/>
+		</HBoxLayout>
+		
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</WBMoveCategory>

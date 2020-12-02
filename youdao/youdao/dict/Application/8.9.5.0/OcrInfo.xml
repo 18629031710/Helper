@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Strings>
+	<Version>1.0</Version>
+	<Lang Name="MultiLeSelect">
+		<String Name="英汉互译 " Value="eng" Seq="2"  QueryName="en" ReName="英文"      LeHint ="(英语)"     />
+		<String Name="法汉互译 " Value="fra" Seq="6"  QueryName="fr" ReName="法文"      LeHint ="(法语)"     />
+		<String Name="日汉互译 " Value="jpn" Seq="8"  QueryName="ja" ReName="日文"      LeHint ="(日语)"     />
+		<String Name="德汉互译 " Value="deu" Seq="5"  QueryName="de" ReName="德文"      LeHint ="(德语)"     />
+		<String Name="韩汉互译 " Value="kor" Seq="9"  QueryName="ko" ReName="韩文"      LeHint ="(韩语)"     />
+		<String Name="葡汉互译 " Value="por" Seq="4"  QueryName="pt" ReName="葡萄牙文"  LeHint ="(葡萄牙语)" />
+		<String Name="西汉互译 " Value="spa" Seq="3"  QueryName="es" ReName="西班牙文"  LeHint ="(西班牙语)" />
+		<String Name="俄汉互译 " Value="rus" Seq="7"  QueryName="ru" ReName="俄文"      LeHint ="(俄语)"     />
+	</Lang>
+</Strings>

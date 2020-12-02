@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GetWordTitle>
+    <Version>1.0</Version>
+	<WinHeight>32</WinHeight>
+	<WinWidth>200</WinWidth>
+    <Layout>
+        <VBoxLayout SizePolicy="Spring;Fix" Height="32">
+			<VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<Frame SizePolicy="Spring;Spring" Name="TitleFrame">
+				<VBoxLayout Name="TitleHide" SizePolicy="Spring;Spring" Background="#D20A0A"/>
+				<VBoxLayout Name="GetWordTitle" SizePolicy="Spring;Spring" Background="#FAFAFA">
+				<Separator Name="TopBorder" SizePolicy="Spring;Fix" Height="1" Background="#E6E6E6"/>
+				<HBoxLayout Name="GetWordTitle" SizePolicy="Spring;Spring">
+					<Separator Name="LeftBorder" SizePolicy="Fix;Spring" Width="1" Background="#E6E6E6"/>
+					<Space Size="14"/>
+					<IconButton Name="GetWordLogo" Width="52" Height="13" IconHeight="13" IconWidth="52" Icon="logo_screen.png" Enabled="False"/>
+					<Space Size="10"/>
+					<Separator Width="1" Height="12" Background="#E5E5E5"/>
+					<Space Size="10"/>
+					<TextButton Name="LangSelector" Background="#FAFAFA" Text="@LangEng" SizePolicy="Auto;Auto" TextAlign="Left" TextMargin="0" TextColor="#666666;#000000" FontFamily="微软雅黑" FontSize="12" Icon="lang-drop.png;lang-drop-hover.png;lang-drop-hover.png;lang-drop-disabled.png" IconWidth="8" IconHeight="4" IconMargin="6" IconAlign="Left"/>
+					<Spring/>
+					<FlipIconButton Name="GetWordNail" Background="#FAFAFA" Flip="False" FlipIcon="mini-sprig-down.png;mini-sprig-down-hover.png" Icon="mini-sprig.png;mini-sprig-hover.png" Width="15" Height="15" ToolTip="@TipFixWnd"/>
+					<Space Size="10"/>
+					<IconButton Name="GetWordCopy" Background="#FAFAFA" Icon="qccopy.png;qccopy-hover.png" Width="12" Height="12" IconHeight="12" IconWidth="12" ToolTip="@TipCopy"/>
+					<Space Size="10"/>
+					<IconButton Name="GetWordClose" Background="#FAFAFA" Icon="mini-close.png;mini-close-hover.png" Width="12" Height="12" IconHeight="10" IconWidth="10" ToolTip="@TipClose"/>
+					<Space Size="10"/>
+				    <IconButton Name="ScreenMore" Background="#FAFAFA" Icon="mini-more.png;mini-more-hover.png" Width="4" Height="12" IconWidth="2" IconHeight="10" ToolTip="@TipMoreSample"/>
+				    <Space Size="13"/>
+					<Separator Name="RightBorder" SizePolicy="Fix;Spring" Width="1" Background="#E6E6E6"/>
+				</HBoxLayout>
+				<Separator Name="BottomBorder" SizePolicy="Spring;Fix" Height="1" Background="#E6E6E6"/>
+				</VBoxLayout>
+			</Frame>
+			<LangSelect Name="LangSelWnd" Buddy="LangSelector" Float="Bottom" Style="Popup" Distance = "10" Extend="15;0" Height="60" Width="306" Layout="lang_select_layout_simple.xml" Visible="False"/>
+		    <ToolWndMenu Name="ToolWndMenu" SizePolicy="Fix;Fix" Buddy="ScreenMore" Style="Popup" Float="Bottom"  Distance="8" EXtend="15;0" FloatAnchor="74;0" Height="76" Width="128" Layout="toolwnd_menu_layout.xml" Visible="False"/> 		
+		</VBoxLayout>
+        </VBoxLayout>
+    </Layout>
+</GetWordTitle>

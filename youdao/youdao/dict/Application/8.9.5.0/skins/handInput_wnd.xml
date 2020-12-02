@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<HandInputWnd>
+	<Version>1.0</Version>
+	<WinHeight>253</WinHeight>
+	<WinWidth>384</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#FFFFFF">
+		    <Space Size="20"/>
+			<HBoxLayout Name="HandInputHeader" Height="13">
+				<Space Size="24"/>
+				<TextButton Name="LangSelector" Background="#FFFFFF" Text="@LangZh-CHS" SizePolicy="Auto;Auto" TextAlign="Left" TextMargin="0" TextColor="#666666;#333333" FontFamily="微软雅黑" FontSize="13" Icon="lang-drop.png;lang-drop-hover.png" IconWidth="8" IconHeight="4" IconMargin="8" IconAlign="Left"/>
+				<Spring/>
+				<IconButton Name="HandInputClose" SizePolicy="Fix;Fix" Width="14" Height="14" IconWidth="13" IconHeight="13" Icon="close.png;close-hover.png"/>
+				<Space Size="24"/>
+			</HBoxLayout>
+			<Space Size="20"/>
+			<HBoxLayout Name="HandInputContent" Height="180">
+				<Space Size="24"/>
+				<VBoxLayout Name="HandInputArea" Width="160" Background="#F7F8FA">
+					<Space Size="12"/>
+					<TextButton Name="HandInputTip" SizePolicy="Auto;Auto" Height="14" Text="@HandInputTip" FontSize="12" FontFamily="微软雅黑" TextColor="#999999" Enabled="False"/>
+					<Space Size="12"/>
+					<HBoxLayout Name="SeparatorWrapper" SizePolicy="Spring;Fix" Height="1">
+						<Space Size="8"/>
+						<Separator SizePolicy="Spring;Fix" Height="1" Color="#E6E6E6"/>
+						<Space Size="8"/>
+					</HBoxLayout>
+					<Space Name="HandInputStrokeArea" Size="90"/>
+					<HBoxLayout Name="HandInputOp" SizePolicy="Spring;Fix" Height="17">
+						<Spring/>
+						<IconButton Name="HandInputReset"  SizePolicy="Fix;Fix" Width="16" Height="17" Icon="hd-reset.png;hd-reset-hover.png"/>
+						<Space Size="17"/>
+						<IconButton Name="HandInputUndo"  SizePolicy="Fix;Auto" Width="15" Height="13" Icon="hd-undo.png;hd-undo-hover.png"/>
+						<Space Size="13"/>
+					</HBoxLayout>
+					<Space Size="10"/>
+				</VBoxLayout>
+				<Space Size="16"/>
+				<Separator Name="HandInputRecogAreaLeft"  SizePolicy="Fix;Fix" Width="1" Height="180" ForeWidth="1" ForeHeight="180" Color="#F2F3F5"/>
+				<VBoxLayout Name="HandInputRecogArea" Width="158" Background="#FFFFFF">
+					<Separator Name="HandInputRecogAreaTop"  SizePolicy="Fix;Fix" Width="160" Height="1" ForeWidth="158" ForeHeight="1" Color="#F2F3F5"/>
+					<Space Size="12"/>
+					<TextButton Name="HandInputRecogTip" SizePolicy="Auto;Auto" Height="14" Text="@HandInputRecogTip" FontSize="12" FontFamily="微软雅黑" TextColor="#999999" Enabled="False"/>
+					<Space Size="12"/>
+					<HBoxLayout Name="SeparatorWrapper" SizePolicy="Spring;Fix" Height="1">
+						<Space Size="8"/>
+						<Separator SizePolicy="Spring;Fix" Height="1" Color="#E6E6E6"/>
+						<Space Size="8"/>
+					</HBoxLayout>
+					<Space Size="12"/>
+					<HBoxLayout  SizePolicy="Spring;Fix" Height="118">
+						<Space Size="8"/>
+						<Space Name="HandInputRecog" Size="142"/>
+						<Space Size="8"/>
+					</HBoxLayout>
+					<Space Size="11"/>
+					<Separator Name="HandInputRecogAreaBottom"  SizePolicy="Fix;Fix" Width="160" Height="1" ForeWidth="158" ForeHeight="1" Color="#F2F3F5"/>
+				</VBoxLayout>
+				<Separator Name="HandInputRecogAreaRight"  SizePolicy="Fix;Fix" Width="1" Height="180" ForeWidth="1" ForeHeight="180" Color="#F2F3F5"/>
+				<Space Size="24"/>
+			</HBoxLayout>
+		</VBoxLayout>
+	</Layout>
+</HandInputWnd>

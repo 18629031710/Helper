@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LanguageSelectWnd>
+	<Version>1.0</Version>
+	<WinHeight>188</WinHeight>
+	<WinWidth>408</WinWidth>
+	<WinExpHeight>268</WinExpHeight>
+	<WinExpWidth>408</WinExpWidth>
+	<NormalGap>19</NormalGap>
+	<ExpandGap>7</ExpandGap>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		
+		<PushAttr Background="#FFFFFF"/>
+		<VBoxLayout SizePolicy="Spring;Spring">
+			<Space Size="19"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="13">
+				<Space Size="20"/>
+				<TextButton Text="@LangMostUsed" SizePolicy="Auto;Auto" Enabled="False" FontSize="11" FontFamily="微软雅黑" TextColor="#999999"/>
+				<Spring/>
+			</HBoxLayout>
+			<Space Size="14"/>
+			<PushAttr ExcluseId="0" SizePolicy="Auto;Auto"/>
+			<PushAttr TextAlign="Left" FontFamily="微软雅黑" FontSize="13" TextColor="#666666;#D20A0A"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="15">
+				<Space Size="20"/>
+				<TextButton Name="$auto" Text="@LangAuto" Actived="True"/>
+				<Space Size="20"/>
+				<TextButton Name="$en" Text="@LangEng"/>
+				<Space Size="20"/>
+				<TextButton Name="$fr" Text="@LangFrc"/>
+				<Space Size="20"/>
+				<TextButton Name="$ja" Text="@LangJap"/>
+				<Spring/>
+			</HBoxLayout>
+			<Space Size="10"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="15">
+				<Space Size="20"/>
+			</HBoxLayout>
+			<PopAttr ExcluseId="" SizePolicy=""/>
+			<PopAttr TextAlign="" FontFamily="" FontSize="" TextColor=""/>
+			<Space Size="19"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="1">
+				<Space Size="20"/>
+				<Separator SizePolicy="Spring;Fix" Height="1" Background="#F0F0F0"/>
+				<Space Size="20"/>
+			</HBoxLayout>
+			<Space Size="19"/>
+			<HBoxLayout SizePolicy="Spring;Fix" Height="13">
+				<Space Size="20"/>
+				<TextButton Text="@LangCustom" SizePolicy="Auto;Auto" FontFamily="微软雅黑" Enabled="False" FontSize="11" TextColor="#999999"/>
+				<Spring/>
+			</HBoxLayout>
+			<Space Size="15"/>
+			<HBoxLayout Name="CustomLangIndicator" SizePolicy="Spring;Fix" Height="15">
+				<Space Size="20"/>
+				<PushAttr ExcluseId="0" Icon="lang-drop.png;lang-drop-red.png;lang-drop-red.png;lang-drop-disabled.png" IconMargin="8" IconAlign="Left"/>
+				<PushAttr TextAlign="Left" FontFamily="微软雅黑" TextMargin="0" FontSize="13" TextColor="#666666;#D20A0A"/>
+				<TextButton Shared="True" Name="LangSrcIndicator" IconWidth="8" IconHeight="4" SizePolicy="Auto;Auto" Text="@LangSelectorDefaultText"/>
+				<Space Size="28"/>
+				<IconButton Name="LangExchanger" Width="20" Height="14" Icon="transfer.png;transfer-hover.png"/>
+				<Space Size="28"/>
+				<TextButton Shared="True" Name="LangDstIndicator" IconWidth="8" IconHeight="4" SizePolicy="Auto;Auto" Text="@LangSelectorDefaultText"/>
+				<Spring/>
+				<PopAttr Icon="" IconMargin="" IconAlign=""/>
+				<PopAttr TextAlign="" FontFamily="" TextMargin="" FontSize="" TextColor=""/>
+			</HBoxLayout>
+			<Space Name="ExpandGap" Size="19"/>
+			<VBoxLayout Name="ExpandPart" SizePolicy="Spring;Spring" Visible="False">
+				<PushAttr Background="#F7F7F7"/>
+				<ArrowSeparator Name="ExpandSep" SizePolicy="Spring;Fix" Height="8" ArrowSize="10;6" Background="#FFFFFF" Color="#F7F7F7" StrokeWidth="1" StrokeColor="#F0F0F0"/>
+				<VBoxLayout SizePolicy="Spring;Fix" Height="14">
+				</VBoxLayout>
+				<HBoxLayout SizePolicy="Spring;Spring">
+					<ScrollArea Name="LangList" SizePolicy="Spring;Spring">
+						<HBoxLayout SizePolicy="Auto;Auto">
+							<PushAttr ExcluseId="1" SizePolicy="Fix;Fix" Width="117" Height="12" TextAlign="Left" AutoTrancate="False"/>
+							<PushAttr FontFamily="微软雅黑" FontSize="12" TextColor="#666666;#D20A0A;#D20A0A;#CCCCCC"/>
+							<Space Size="20"/>
+							<VBoxLayout SizePolicy="Fix;Auto" Width="117">
+								  <TextButton Name="en" Text="@LangEn"/>
+							    <Space Size="12"/>
+								  <TextButton Name="fr" Text="@LangFr"/>						
+ 							</VBoxLayout>
+              <VBoxLayout SizePolicy="Fix;Auto" Width="117">
+                　	<TextButton Name="ja" Text="@LangJa"/>
+                    <Space Size="12"/>
+                　	<TextButton Name="zh-CHS" Text="@LangZh-CHS"/>
+              </VBoxLayout>
+							<PopAttr ExcluseId="" SizePolicy="" TextAlign=""/>
+							<PopAttr FontFamily="" FontSize="" TextColor=""/>
+						</HBoxLayout>
+					</ScrollArea>
+					<ScrollBar Name="LangScrollBar" SizePolicy="Fix;Spring" Width="8" Type="Vertical" Background="#F7F7F7" BarColor="#CECECE" Delta="5"/>
+				</HBoxLayout>
+				<VBoxLayout SizePolicy="Spring;Fix" Height="20">
+				</VBoxLayout>
+			</VBoxLayout>
+		</VBoxLayout>
+		
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</LanguageSelectWnd>

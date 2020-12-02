@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<skin>
+<version>18</version>
+<name>默认皮肤</name>
+<image-path>xp-default.bmp</image-path>
+<css-path>default.css</css-path>
+
+<element name="header_bottom_bg" type="bmp" left="660" right="666" top="336" bottom="354"/>
+<element name="dropdown" type="button" left="271" right="328" top="374" bottom="429" num="1"/>
+<element name="deletebutton" type="button" left="319" right="327" top="98" bottom="114" num="2"/>
+
+<element name="btn_language_eng" type="button" left="40" right="236" top="340" bottom="467" num="1" />
+<element name="btn_language_fr" type="button" left="40" right="236" top="467" bottom="594" num="1" />
+<element name="btn_language_jap" type="button" left="40" right="236" top="594" bottom="721" num="1" />
+<element name="btn_language_ko" type="button" left="40" right="236" top="721" bottom="848" num="1" />
+
+<element name="btn_net_search" type="button" left="40" right="168" top="41" bottom="301" num="2" />
+<element name="btn_handinput" type="button" left="274" right="331" top="639" bottom="792" num="3" />
+
+
+<!--Droplist-->
+<element name="pageup" type="button" left="428" right="473" top="639" bottom="771" num="4" />
+<element name="pagedown" type="button" left="476" right="521" top="639" bottom="771" num="4" />
+<element name="delete_history" type="button" left="368" right="401" top="639" bottom="765" num="3" />
+<element name="droplist_clr_border" type="color" r="37" g="156" b="238"/>
+<element name="droplist_item_clr_text" type="color" r="67" g="67" b="67"/>
+<element name="droplist_item_clr_hover_bk" type="color" r="209" g="233" b="254"/>
+<element name="droplist_item_clr_bk" type="color" r="179" g="220" b="239"/>
+<element name="droplist_item_clr_greytext" type="color" r="126" g="126" b="126"/>
+<element name="droplist_item_clr_suggesttext" type="color" r="99" g="140" b="11"/>
+<element name="droplist_bar_clr_text" type="color" r="50" g="98" b="111"/>
+<element name="droplist_bar_bk" type="color" r="231" g="242" b="247"/>
+
+<!--MainMenu-->
+<element name="mainmenu_header_left" type="bmp" left="428" right="457" top="796" bottom="801" />
+<element name="mainmenu_header_mid" type="bmp" left="458" right="459" top="796" bottom="801" />
+<element name="mainmenu_header_right" type="bmp" left="460" right="463" top="796" bottom="801" />
+<element name="mainmenu_cascade_footer_left" type="bmp" left="428" right="457" top="802" bottom="807" />
+<element name="mainmenu_cascade_footer_mid" type="bmp" left="458" right="459" top="802" bottom="807" />
+<element name="mainmenu_cascade_footer_right" type="bmp" left="460" right="463" top="802" bottom="807" />
+<element name="mainmenu_icon_quit" type="bmp" left="463" right="523" top="535" bottom="595" />
+<element name="mainmenu_icon_check" type="bmp" left="526" right="586" top="535" bottom="595" />
+<element name="mainmenu_icon_option" type="bmp" left="399" right="459" top="535" bottom="595" />/>
+<element name="mainmenu_icon_closemini" type="bmp" left="588" right="648" top="535" bottom="595" />
+<element name="mainmenu_icon_scron" type="bmp" left="273" right="333" top="472" bottom="532" />
+<element name="mainmenu_icon_scroff" type="bmp" left="273" right="333" top="535" bottom="595" />
+<element name="mainmenu_icon_strokeon" type="bmp" left="336" right="396" top="474" bottom="532" />
+<element name="mainmenu_icon_strokeoff" type="bmp" left="336" right="396" top="535" bottom="595" />
+<element name="mainmenu_icon_openmini" type="bmp" left="399" right="459" top="472" bottom="532" />
+<element name="mainmenu_icon_openmain" type="bmp" left="463" right="523" top="472" bottom="532" />
+<element name="mainmenu_icon_openwbredpoint" type="bmp" left="526" right="586" top="472" bottom="532" />
+<element name="mainmenu_icon_openwb" type="bmp" left="588" right="648" top="472" bottom="532" />
+
+<element name="scr_clr_border" type="color" r="219" g="62" b="62"/><!-- 取词框2px、工具条1px边框色 -->
+<element name="scr_clr_background" type="color" r="255" g="255" b="255"/><!-- 取词框默认色 -->
+<element name="scr_clr_title_word" type="color" r="0" g="0" b="0"/><!-- 取词颜色 -->
+<element name="scr_clr_word_gray" type="color" r="95" g="98" b="102"/><!-- 全部灰色 -->
+<element name="scr_clr_text" type="color" r="70" g="70" b="70"/>
+<element name="scr_clr_detail" type="color" r="153" g="153" b="153"/>
+<element name="scr_clr_hyperlink" type="color" r="46" g="48" b="51"/>
+<element name="scr_clr_split_border" type="color" r="185" g="213" b="242"/><!-- 网络释义 分割边色 -->
+<element name="scr_clr_tab_background" type="color" r="255" g="255" b="255"/><!-- tab背景色 -->
+<element name="scr_clr_tab_border" type="color" r="219" g="62" b="62"/><!-- tab底边色 -->
+<element name="scr_clr_tab_text" type="color" r="153" g="153" b="153"/><!-- tab默认文字色 -->
+<element name="scr_clr_tab_selected_background" type="color" r="255" g="255" b="255"/><!-- 当前tab背景色 -->
+<element name="scr_clr_tab_selected_text" type="color" r="46" g="48" b="51"/><!-- 当前tab文字色 -->
+<element name="scr_clr_optiontab_over_text" type="color" r="125" g="125" b="125"/><!-- 未选中tab hover状态文字颜色 -->
+<element name="scr_clr_language_border" type="color" r="207" g="220" b="229"/>
+<element name="scr_clr_language_over_border" type="color" r="175" g="198" b="215"/>
+<element name="scr_clr_title_mid" type="color" r="219" g="62" b="62"/>
+<element name="scr_bmp_title_split" type="bmp" left="134" right="135" top="144" bottom="165"/>
+<element name="scr_btn_pronounce" type="button" left="365" right="416" top="336" bottom="432" num="2"/>
+<element name="scr_btn_title_logo" type="button" left="182" right="239" top="40" bottom="154" num="2"/>
+<element name="scr_btn_websearch" type="button" left="239" right="296" top="40" bottom="154" num="2"/>
+<element name="scr_btn_wordbook_normal" type="button" left="416" right="467" top="336" bottom="432" num="2"/>
+<element name="scr_btn_wordbook_clicked" type="button" left="467" right="518" top="336" bottom="432" num="2"/>
+<element name="scr_btn_copy" type="button" left="296" right="353" top="40" bottom="154" num="2"/>
+<element name="scr_btn_sprig_up" type="button" left="410" right="467" top="40" bottom="154" num="2"/>
+<element name="scr_btn_sprig_down" type="button" left="467" right="524" top="40" bottom="154" num="2"/>
+<element name="scr_btn_close" type="button" left="524" right="581" top="40" bottom="154" num="2"/>
+<element name="scr_btn_config" type="button" left="353" right="410" top="40" bottom="154" num="2"/>
+<element name="scr_btn_icon" type="button" left="557" right="647" top="336" bottom="426" num="1"/>
+<element name="control_selected_bgclr" type="color" r="248" g="248" b="248"/>
+<element name="infobar_text_color" type="color" r="86" g="86" b="86"/>
+<element name="infobar_title_text_color" type="color" r="0" g="0" b="0"/>
+
+
+<element name="strk_srch_btn_setup" type="button" left="182" right="230" top="167" bottom="311" num="3" />
+
+<element name="strk_srch_btn_unlock" type="button" left="244" right="292" top="167" bottom="311" num="3" />
+<element name="strk_srch_btn_lock" type="button" left="428" right="476" top="167" bottom="311" num="3" />
+<element name="strk_srch_btn_close" type="button" left="491" right="539" top="167" bottom="311" num="3" />
+<element name="strk_srch_bgrd_color" type="color" r="255" g="255" b="255"/>
+<element name="strk_srch_board_color" type="color" r="244" g="76" b="76"/>
+<element name="mini_dropdown" type="button" left="551" right="602" top="639" bottom="954" num="3"/>
+<element name="mini_btn_setup" type="button" left="182" right="230" top="167" bottom="310" num="3" />
+
+<element name="mini_btn_unlock" type="button" left="244" right="291" top="167" bottom="310" num="3" />
+
+<element name="mini_btn_lock" type="button" left="428" right="475" top="167" bottom="310" num="3" />
+
+<element name="mini_btn_close" type="button" left="491" right="539" top="167" bottom="311" num="3" />
+
+<element name="handinput_close" type="button" left="542" right="589" top="167" bottom="311" num="3"/>
+<element name="handinput_dropdown" type="button" left="586" right="623" top="167" bottom="311" num="3"/>
+</skin>

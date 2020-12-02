@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<WBRButtonMenu>
+	<Version>1.0</Version>
+	<WinHeight>120</WinHeight>
+	<WinWidth>130</WinWidth>
+	<Layout>
+		<VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<MenuItem Name="WBRBMenuDel" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBRBMenuDel" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+			<MenuItem Name="WBRBMenuEdit" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBRBMenuEdit" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+			<MenuItem Name="WBRBMenuMove" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBRBMenuMove" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<MenuItem Name="WBRBMenuNoReview" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@WBRBMenuNoReview" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<Spring/>
+		</VBoxLayout>
+	</Layout>
+</WBRButtonMenu>

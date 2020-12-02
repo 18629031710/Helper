@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<PopupWnd>
+	<Version>1.0</Version>
+	<WinHeight>330</WinHeight>
+	<WinWidth>330</WinWidth>
+	<Layout>
+		<VBoxLayout Name="RootLayout" Background="#FAFAFA" SizePolicy="Spring;Spring">
+			<VBoxLayout Name="CommonWndTitle" SizePolicy="Spring;Fix" Height="41">
+				<HBoxLayout SizePolicy="Spring;Fix" Height="40">
+				<Space Size="20"/>
+				<TextButton Name="WinName" SizePolicy="Auto;Auto" TextColor="#666666;#666666;#666666;#666666" FontFamily="微软雅黑" FontSize="13" Enabled="False"/>
+				<Spring/>
+				<IconButton Name="CommonWndClose" Background="#FAFAFA" Icon="close.png;close-hover.png;close-hover.png;close.png" Width="16" Height="16" IconWidth="13" IconHeight="13"/>
+				<Space Size="20"/>
+				</HBoxLayout>
+				<Separator SizePolicy="Spring;Fix" Height="1" Background="#F0F0F0"/>
+			</VBoxLayout>
+			<CefWnd Name="CommonCefWnd" WndClass="YdWordEditWnd" SizePolicy="Spring;Spring" MinWidth="100" MinHeight="20"/>
+		</VBoxLayout>
+	</Layout>
+</PopupWnd>

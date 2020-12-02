@@ -1,0 +1,9 @@
+<?xml version="1.0"?> 
+<overlay id="youdaogetword" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"> 
+<script type="application/x-javascript"  src="chrome://youdaogetword/content/getword.js" />
+<script type="application/x-javascript">
+
+    addEventListener("mousemove", on_mousemove, false);
+    
+</script>
+</overlay>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DOCTRANWND>
+    <Version>1.0</Version>
+    <WinHeight>320</WinHeight>
+    <WinWidth>480</WinWidth>
+    <Layout>
+        <VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+        <Space Name="TopFrame" Size="1"/>
+        <HBoxLayout SizePolicy="Spring;Spring">
+        <Space Name="LeftFrame" Size="1"/>
+        
+        <PushAttr Background="#FFFFFF" SizePolicy="Spring;Fix"/>
+        <VBoxLayout Name="DocTran" SizePolicy="Spring;Spring">
+            <PushAttr Background="#FAFAFA"/>
+            <HBoxLayout  Name="DocHeader" Height="40">
+                <Space Size="19"/>
+                <TextButton Name="DocWinName" SizePolicy="Auto;Auto" Text="@DocTransText" TextColor="#666666" FontFamily="微软雅黑" FontSize="13" Enabled="False"/>
+                <Space Size="12"/>
+                <Separator Name="DocFileNameofSep" SizePolicy="Auto;Auto" Width="1" Height="18" Background="#D8D8D8" Visible="False"/>
+                <Space Size="12"/>
+                <TextButton Name="DocTransInfo" SizePolicy="Fix;Auto" Width="310" Height="13" FontFamily="微软雅黑" FontSize="13" TextColor="#999999" TextAlign="Left" Text="" TextCompressPos="10"/>
+                <Space Size="40"/>
+                <IconButton Name="DocWinClose" SizePolicy="Fix;Fix"  Width="16" Height="16" IconWidth="13" IconHeight="13" Icon="close.png;close-hover.png"/>
+                <Space Size="19"/>
+            </HBoxLayout>
+            <VBoxLayout Name="DocSperator" SizePolicy="Spring;Fix" Height="1" Background="#E5E5E5"/>
+            <PushAttr Background="#FFFFFF"/>
+            <Frame Name="DocTranFrame" SizePolicy="Spring;Spring">
+                <VBoxLayout Name="DocUpLoadSuc" SizePolicy="Spring;Spring">
+                    <Space Size="29"/>
+                    <HBoxLayout SizePolicy="Spring;Fix" Height="87">
+                        <Space Size="45"/>
+                        <Separator Name="DocLeft"  SizePolicy="Fix;Fix" Width="1" Height="87" ForeWidth="1" ForeHeight="85" Color="#E6E6E6" LineStyle="DashCustom" DashPattern="5;5"/>
+                        <VBoxLayout SizePolicy="Fix;Spring" Width="390">
+                            <Separator Name="DocTop"  SizePolicy="Spring;Fix" Width="390" Height="1" ForeWidth="390" ForeHeight="1" Color="#E6E6E6" LineStyle="DashCustom" DashPattern="5;5"/>
+                            <HBoxLayout Name="DocFileInfo" SizePolicy="Spring;Spring">
+                                <Space Size="21"/>
+                                <IconButton Name="DocIcon" SizePolicy="Fix;Fix" Width="28" Height="34" IconHeight="34" IconWidth="28" Icon="doc-doc.png" Enabled="False"/>
+                                <Space Size="16"/>
+                                <VBoxLayout SizePolicy="Fix;Spring" Width="201">
+                                    <Spring/>
+                                    <TextButton Name="DocName" SizePolicy="Spring;Fix" Height="14" FontFamily="微软雅黑" FontSize="14" TextColor="#666666" TextAlign="Left" Text="" TextCompressPos="10"/>
+                                    <Space Size="6"/>
+                                    <TextButton Name="DocSize" SizePolicy="Spring;Fix" Height="12" FontFamily="微软雅黑" FontSize="12" TextColor="#999999" TextAlign="Left" Text=""/>
+                                    <Spring/>
+                                </VBoxLayout>
+                                <Space Size="40"/>
+                                <TextButton Name="DocFileModify" SizePolicy="Fix;Fix" Width="54" Height="26" Icon="doc-change.png;doc-change-hover.png;doc-change-hover.png;doc-change-disabled.png" IconMode="Stretch" Text="@DocChange" FontSize="12" FontFamily="微软雅黑" TextColor="#666666"/>
+                                <Space Size="20"/>
+                            </HBoxLayout>
+                            <Separator Name="DocBottom"  SizePolicy="Spring;Fix" Width="390" Height="1" ForeWidth="390" ForeHeight="1" Color="#E6E6E6" LineStyle="DashCustom" DashPattern="5;5"/>
+                        </VBoxLayout>
+                        <Separator Name="DocRight"  SizePolicy="Fix;Fix" Width="1" Height="87" ForeWidth="1" ForeHeight="85" Color="#E6E6E6" LineStyle="DashCustom" DashPattern="5;5"/>
+                        <Space Size="45"/>
+                    </HBoxLayout>
+                    <Space Size="10"/>
+                    <VBoxLayout Name="DocLeInfo" SizePolicy="Spring;Fix" Height="65">
+                        <TextButton Name="DocLeTip" SizePolicy="Fix;Fix" Height="17" Width="160" TextAlign="Center" Text="" FontFamily="微软雅黑" FontSize="13" TextColor="#D20A0A"/>
+                        <Space Size="8"/>
+                        <LanguageItem Name="DocTransLang" SizePolicy="Fix;Fix" Height="40" Width="226"  IsDefault="True"  LeFrom="@LangZh-CHS" LeTo="@LangEn" FontFamily="微软雅黑" FontSize="13" TextColor="#666666" Background="#FFFFFF" BackgroundIcon="doc-language.png;doc-language-hover.png" Icon="doc-learrow.png" IconWidth="20" IconHeight="9" ItemPadding="16;12"/>
+                    </VBoxLayout>
+                    <Space Size="12"/>
+                    <TextButton Name="DocGoTran" SizePolicy="Fix;Fix" Width="226" Height="40" Icon="doc-gotran.png;doc-gotran-hover.png;doc-gotran-hover.png;doc-gotran-disabled.png" IconMode="Stretch" Text="@DocTran" FontSize="16" FontFamily="微软雅黑" TextColor="#FFF6F6"/>
+                    <Space Size="36"/>
+                </VBoxLayout>
+                <VBoxLayout Name="DocTransFail" SizePolicy="Spring;Spring">
+                    <Space Size="27"/>
+                    <IconButton Name="DocErrorIcon" Width="130" Height="120" IconHeight="120" IconWidth="130" Icon="doc-error.png" Enabled="False"/>
+                    <Space Size="16"/>
+                    <TextButton Name="DocErrorTip" Height="16" Text="@DocErrorTip" FontFamily="微软雅黑" FontSize="16" TextColor="#333333"/>
+					<Space Name="DocErrorTipSpace" Size="5"  Visible="False"/>
+					<TextButton Name="DocErrorTipExtend" Height="16" Text="" FontFamily="微软雅黑" FontSize="16" TextColor="#333333"  Visible="False"/>
+                    <Space Size="28"/>
+                    <TextButton Name="DocReturn" SizePolicy="Fix;Fix" Height="32" Width="100" Icon="doc-select.png;doc-select-hover.png;doc-select-hover.png;doc-select-disabled.png" IconMode="Stretch"  Text="@DocReturn" FontSize="14" FontFamily="微软雅黑" TextColor="#666666"/>
+                    <Space Size="40"/>
+                </VBoxLayout>
+                <VBoxLayout Name="DocTransOffline" SizePolicy="Spring;Spring">
+                    <VBoxLayout SizePolicy="Spring;Spring">
+                        <Space Size="37"/>
+                        <IconButton Name="DocOfflineIcon" Width="110" Height="103" IconWidth="110" IconHeight="103" Icon="doc-offline.png"/>
+                        <Space Size="23"/>
+                        <TextButton Name="DocOfflineTip" Height="16" Text="@DocOffline" FontFamily="微软雅黑" FontSize="16" TextColor="#333333"/>
+                        <Space Size="28"/>
+                        <TextButton Name="DocReturn" SizePolicy="Fix;Fix" Height="32" Width="100" Icon="doc-select.png;doc-select-hover.png;doc-select-hover.png;doc-select-disabled.png" IconMode="Stretch"  Text="@DocReturn" FontSize="14" FontFamily="微软雅黑" TextColor="#666666"/>
+                        <Space Size="40"/>
+                    </VBoxLayout>
+                </VBoxLayout>
+                <VBoxLayout Name="DocTraning" SizePolicy="Spring;Spring">
+                    <VBoxLayout SizePolicy="Spring;Spring">
+                        <Space Size="76"/>
+                        <HBoxLayout SizePolicy="Spring;Spring" Height="32">
+                            <PushAttr SizePolicy="Auto;Auto"/>
+                            <Spring/>
+                            <TextButton Name="DocTraningPercent" Height="32" Text="3%" FontSize="32" FontFamily="微软雅黑" TextColor="#666666" Enabled="False"/>
+                            <Space Size="8"/>
+                            <TextButton Name="DocTraningTip" Background="#FFFFFF" SizePolicy="Auto;Auto" Text="@DocTraning" TextColor="#999999" FontFamily="微软雅黑" FontSize="14" Enabled="False"/>
+                            <Spring/>
+                        </HBoxLayout>
+                        <Space Size="24"/>
+                        <ProgressBar Name="DocTraningProgress" SizePolicy="Fix;Fix" Height="6" Width="340" Background="#FBE9EA" BarColor="#E02433"/>
+                        <Space Size="74"/>
+                        <TextButton Name="DocTraningCancle" SizePolicy="Fix;Fix" Height="32" Width="100" Icon="doc-select.png;doc-select-hover.png;doc-select-hover.png;doc-select-disabled.png" IconMode="Stretch"  Text="@DocCancle" FontSize="13" FontFamily="微软雅黑" TextColor="#666666"/>
+                        <Space Size="40"/>
+                    </VBoxLayout>
+                </VBoxLayout>
+            </Frame>
+        </VBoxLayout>
+        
+        <Space Name="RightFrame" Size="1"/>
+        </HBoxLayout>
+        <Space Name="BottomFrame" Size="1"/>
+        </VBoxLayout>
+    </Layout>
+</DOCTRANWND>

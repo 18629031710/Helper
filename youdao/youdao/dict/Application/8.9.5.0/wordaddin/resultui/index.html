@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+<meta charset="utf-8">
+<title>有道词典word插件</title>
+<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>    
+    <div id="app"></div>
+<div id="app_original"></div>
+<p   id="cssP"></p>
+
+<!-- 分页加载提示 -->
+<div class="pay-container" id="loader">
+    <div id="loaderProgress" class="loader-text">
+        <span class="loading-icon"></span>
+        <span>文档中第</span>
+        <span class="loader-start">1</span>
+        <span>至</span>
+        <span class="loader-end">1000</span>
+        <span>字的翻译内容正在加载...</span>
+    </div>
+</div>
+    <div id="toast">
+  <div class="header"></div>
+  <div class="content"></div>
+  <div class="footer">
+     <a  herf="#" onclick="javascript:document.getElementById('toast').style.display='none';" class="btn-ok">确定</a>
+  </div>
+</div>
+</body>
+
+
+
+<script src="./js/libs/jquery-1.11.3.min.js"></script>
+<script src="./js/libs/lodash.js"></script>
+<script data-main="./js/index.js" src="./js/libs/require.js"></script>
+</html>

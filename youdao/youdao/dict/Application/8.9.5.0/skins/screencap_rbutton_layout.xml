@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ScreenCaptureRBWnd>
+	<Version>1.0</Version>
+	<WinHeight>120</WinHeight>
+	<WinWidth>104</WinWidth>
+	<Layout>
+		<VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<MenuItem Name="SCRButtonCopy" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@SCRButtonCopy" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+			<MenuItem Name="SCRButtonEdit" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@SCRButtonEdit" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28" />
+			<MenuItem Name="SCRButtonReCap" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@SCRButtonReCap" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<MenuItem Name="SCRButtonExit" SizePolicy="Spring;Fix" Height="30" Background="#FFFFFF;#FDF3F3" Text="@SCRButtonExit" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="28"/>
+			<Spring/>
+		</VBoxLayout>
+	</Layout>
+</ScreenCaptureRBWnd>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DocLangSelectWnd>
+    <Version>1.0</Version>
+    <WinHeight>81</WinHeight>
+    <WinWidth>226</WinWidth>
+    <Layout>
+        <VBoxLayout Name="RootLayout" Background="#FFFFFF" SizePolicy="Spring;Spring">
+			<HBoxLayout Name="DocContentPart" SizePolicy="Spring;Spring">
+				<VBoxLayout Name="DocLeftFrame" SizePolicy="Fix;Spring" Width="1" Background="#D6D6D6"/>
+				<VBoxLayout Name="DocLangContent" SizePolicy="Spring;Spring">
+				    <LanguageItem Name="DocChnToEn"  SizePolicy="Spring;Fix" IsDefault="False" Background="#FFFFFF;#FFF0F0" Height="40" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="13" LeFrom="@LangZh-CHS" LeTo="@LangEn" Icon="doc-learrow.png;doc-learrow-hover.png" IconWidth="20" IconHeight="9" ItemPadding="16;12"/>
+				    <LanguageItem Name="DocEnToChn"  SizePolicy="Spring;Fix" IsDefault="False" Background="#FFFFFF;#FFF0F0" Height="40" TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="13" LeFrom="@LangEn" LeTo="@LangZh-CHS" Icon="doc-learrow.png;doc-learrow-hover.png" IconWidth="20" IconHeight="9" ItemPadding="16;12"/>
+				</VBoxLayout>
+				<VBoxLayout Name="DocRightFrame" SizePolicy="Fix;Spring" Width="1" Background="#D6D6D6"/>
+			</HBoxLayout>			
+			<VBoxLayout Name="DocBottomFrame" SizePolicy="Spring;Fix" Height="1" Background="#D6D6D6"/>
+		</VBoxLayout>
+    </Layout>
+</DocLangSelectWnd>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DictFrame>
+	<Version>2.0</Version>
+	<WinHeight>600</WinHeight>
+	<WinWidth>820</WinWidth>
+	<WinShinkWidth>716</WinShinkWidth>
+	<WinShinkHeight>600</WinShinkHeight>
+	<WinBorder>2</WinBorder>
+	<IconPath>icons</IconPath>
+	<FontPath>fonts</FontPath>
+	<Layout>
+		<HBoxLayout Name="RootLayout" SizePolicy="Spring;Spring">
+			<PushAttr Background="#F2F2F1" AAEnforce="False"/>
+			<VBoxLayout Name="TabPart" SizePolicy="Fix;Spring" Width="160;56" Background="">
+				<Space Size="29"/>
+				<IconButton Name="YoudaoLogo" Background="#00000000"  Aero="True" Width="88;26" Height="57;57" IconWidth="88;26" IconHeight="57;26" Icon="logo.png" IconShink="logo-shink.png" ToolTip="@TipLogo"/>
+				<Space Size="28"/>
+				
+				<PushAttr ExcluseId="0" Background="#00F2F2F1;#00F2F2F1;#F1E7E6;#00F2F2F1" Aero="True"/>
+				<PushAttr IconMargin="33;21" SizePolicy="Spring;Fix" Height="44"  TextPosCorrect="0;-2"/>
+				<PushAttr FontFamily="微软雅黑" FontSize="14" TextColor="#666666;#D20A0A;#D20A0A" TextMargin="62"/>
+				<TabButton Name="DictTab" IconWidth="16" IconHeight="17" Icon="dict.png;dict-hover.png;dict-hover.png" Text="@DictTabText" Actived="True"/>
+				<TabButton Name="TransTab" IconWidth="16" IconHeight="17" Icon="trans.png;trans-hover.png;trans-hover.png" Text="@TransTabText"/>
+				<TabButton Name="WordBookTab" Height="0" />
+				<TabButton Name="DocTransTab" Height="0" />
+				<Space Size="12"/>
+				<HBoxLayout Name="SeparatorWrapper" SizePolicy="Spring;Fix" Height="1">
+				    <Space Size="24"/>
+				    <Separator SizePolicy="Spring;Fix" Height="1" Color="#E6E6E6" />
+				    <Space Size="24"/>
+			    </HBoxLayout>
+				<Space Size="12"/>
+				<TabButton Name="ClassTab" Height="0" />				
+				<TabButton Name="AsrTab" Height="0" />
+				<TabButton Name="ManualTransTab" Height="0" />	
+				<PopAttr ExcluseId="" Background="" BorderWidth="" BorderColor=""/>
+				<PopAttr IconWidth="" IconHeight="" IconMargin="" SizePolicy="" Height=""/>
+				<PopAttr FontFamily="" FontSize="" TextColor="" TextMargin=""/>
+
+				<Spring/>
+				<PushAttr SizePolicy="Spring;Fix" Height="16;31" Icon="check.png" CheckedIcon="checked.png" IconMargin="35;0" IconHeight="14" IconWidth="14"/>
+				<PushAttr TextMargin="62;20" FontFamily="微软雅黑" FontSize="14;11" TextColor="#666666"/>
+				<CheckBox Name="GetWordOpt" Height="0" Background="#00F2F2F1"/>
+				<Space Size="16;20"/>
+				<CheckBox Name="StrkWordOpt" Height="0" Background="#00F2F2F1"/>
+				<PopAttr SizePolicy="" Height="" Icon="" CheckedIcon="" IconMargin="" IconHeight="" IconWidth=""/>
+				<PopAttr TextMargin="" FontFamily="" FontSize="" TextColor=""  TextPosCorrect="" Aero=""/>
+				<Space Size="45"/>
+			</VBoxLayout>
+			<PopAttr Background=""/>
+			
+			<PushAttr Background="#FFFFFF"/>
+			<VBoxLayout Name="WorkPart" SizePolicy="Spring;Spring">
+				<HBoxLayout Name="TitlePart" SizePolicy="Spring;Fix" Height="60" Background="">
+					<Space Size="24"/>
+					<HBoxLayout Name="PrevNextGroup" SizePolicy="Auto;Fix" Height="60" Background="" Visible="False">
+						<IconButton Name="Prev" Width="16" Height="16" Icon="back.png;back-hover.png;back-hover.png;back-disabled.png" ToolTip="@TipPrev"/>
+						<Space Size="19"/>
+						<IconButton Name="Next" Width="16" Height="16" Icon="forward.png;forward-hover.png;forward-hover.png;forward-disabled.png" ToolTip="@TipNext"/>
+						<Space Size="24"/>
+					</HBoxLayout>
+					<HBoxLayout Name="GlobalLangIndicatorArea" SizePolicy="Auto;Fix" Height="14" Visible="False" Background="">
+						<PushAttr Icon="lang-drop.png;lang-drop-hover.png;lang-drop-hover.png;lang-drop-disabled.png" IconMargin="8" IconAlign="Left"/>
+						<PushAttr TextAlign="Left" FontFamily="微软雅黑" TextMargin="0" FontSize="13" TextColor="#666666;#000000" TextPosCorrect="0;-1"/>
+						<TextButton Name="GlobalLangSrcIndicator" IconWidth="8" IconHeight="4" SizePolicy="Auto;Auto" Text="@LangAuto"/>
+						<HBoxLayout Name="GlobalLangDstGroup" SizePolicy="Auto;Auto" Visible="False">
+							<Space Size="20"/>
+							<IconButton Name="GlobalLangExchanger" Width="20" Height="14" Icon="transfer.png;transfer-hover.png"/>
+							<Space Size="20"/>
+							<TextButton Name="GlobalLangDstIndicator" IconWidth="8" IconHeight="4" SizePolicy="Auto;Auto" />
+						</HBoxLayout>
+						<Space Size="24"/>
+						<IconButton Width="9" Height="24" Icon="title-separator.png" Enabled="False"/>
+						<Space Size="24"/>
+						<PopAttr Icon="" IconMargin="" IconAlign=""/>
+						<PopAttr TextAlign="" FontFamily="" TextMargin="" FontSize="" TextColor="" TextPosCorrect=""/>
+					</HBoxLayout>
+					<HBoxLayout Name="ShotAndDocTransGroup" SizePolicy="Fix;Fix" Width="58" Height="60" Background="" Visible="False">
+						<IconButton Name="DocTransMini" Width="15" Height="0" />
+						<Space Size="25"/>
+						<IconButton Name="ScrshotTransMini" Height="0" />
+					</HBoxLayout>
+					<HBoxLayout Name="DTContactUs" SizePolicy="Auto;Fix" Height="60" Background="" Visible="False">
+						<IconButton Name="ContactUs" Width="21" Height="19" Icon="doctab-contact.png;doctab-contact-hover.png" ToolTip="@DocContactText"/>
+					</HBoxLayout>
+					<Spring/>
+					<!--<LoginButton Name="Login" HintColor="#FFD20A0A" Width="32" Height="32" IconWidth="28" IconHeight="28" IconMaskWide="2" DefPortrait="default-portrait.png" VipTag="vip-tag.png;vip-tag-expire.png"  VipTagSize="13;13"/>-->
+					<Space Size="2"/>
+					<!--<IconButton Name="LoginInfo" Width="8" Height="5" Icon="login-drop.png;login-drop-hover.png"/>-->
+					<Space Size="28"/>
+					<!--<IconButton Name="MiniMode" Width="16" Height="16" IconWidth="13" IconHeight="13" Icon="mini.png;mini-hover.png" ToolTip="@TipMiniMode"/>-->
+					<Space Size="20"/>
+					<IconButton Name="Minimum" Width="16" Height="16" IconWidth="14" IconHeight="1" Icon="minimum.png;minimum-hover.png" ToolTip="@TipMinimum"/>
+					<Space Size="20"/>
+					<FlipIconButton Name="Maximum" Width="16" Height="16" IconWidth="14" IconHeight="14" Flip="False" AutoFlip="False" Icon="maximum.png;maximum-hover.png" FlipIcon="restore.png;restore-hover.png" ToolTip="@TipMaximum"/>
+					<Space Size="20"/>
+					<IconButton Name="Close" Width="16" Height="16" IconWidth="13" IconHeight="13" Icon="close.png;close-hover.png" ToolTip="@TipClose"/>
+					<Space Size="20"/>
+				</HBoxLayout>
+				<HBoxLayout SizePolicy="Spring;Spring">
+					<Frame Name="ContentFrame" SizePolicy="Spring;Spring" Background="">
+						<CefWnd Shared="True" Name="MainCefWnd" SizePolicy="Spring;Spring" MinWidth="0" MinHeight="0" StartPage="frame://html/index.html"/>
+						<TextButton Shared="True" Name="Search" Width="78" Height="27" Icon="search.png;search-hover.png;search-hover.png;search-disabled.png" IconMode="Stretch" IconAlign="Center;Bottom" Text="@SearchText" TextPosCorrect="0;-1" FontSize="13" FontFamily="微软雅黑" TextColor="#FFFFFF"/>
+						<VBoxLayout Name="FirstPage" SizePolicy="Spring;Spring">
+							<PushAttr SizePolicy="Auto;Auto" IconAlign="Left" TextAlign="Left" FontFamily="微软雅黑"/>
+							<Space Size="12"/>
+							<HBoxLayout Name="LangIndicatorArea" SizePolicy="Spring;Fix" Height="14" Background="">
+								<PushAttr Icon="lang-drop.png;lang-drop-hover.png;lang-drop-hover.png;lang-drop-disabled.png" IconMargin="8" IconAlign="Left"/>
+								<PushAttr TextAlign="Left" FontFamily="微软雅黑" TextMargin="0" FontSize="13" TextColor="#666666;#000000" TextPosCorrect="0;-1"/>
+								<Space Size="24"/>
+								<TextButton Name="LangSrcIndicator" IconWidth="8" IconHeight="4" SizePolicy="Auto;Auto" Text="@LangAuto"/>
+								<Space Size="20"/>
+								<IconButton Name="LangExchanger" Width="20" Height="14" Icon="transfer.png;transfer-hover.png" Visible="False"/>
+								<Space Size="20"/>
+								<TextButton Name="LangDstIndicator" IconWidth="8" IconHeight="4" SizePolicy="Auto;Auto" Visible="False"/>
+								<Spring/>
+								<PopAttr Icon="" IconMargin="" IconAlign=""/>
+								<PopAttr TextAlign="" FontFamily="" TextMargin="" FontSize="" TextColor="" TextPosCorrect=""/>
+							</HBoxLayout>
+							<Space Size="27"/>
+							<HBoxLayout SizePolicy="Spring;Fix" Height="92" Background="">
+								<Space Size="16"/>
+								<HBoxLayout SizePolicy="Spring;Fix" Height="92" Background="#F7F8FA">
+								<Space Size="8"/>
+								<VBoxLayout SizePolicy="Spring;Fix" Height="92" Background="#F7F8FA">
+								<Space Size="8"/>
+								<InputBox Name="FirstPageInputBox" SizePolicy="Spring;Spring" HookInput="True" Height="66" Background="#00F7F8FA" BackUnfocus="#00F7F8FA" TextColor="#00333333" DefTextColor="#00B3B3B3" DragMaskColor="#00F7F7F7" DragTextColor="#00666666" DragFontSize="16" DragText="@DocDragTip" DefaultText="@InputDefaultText" FontSize="22"/>
+								<Space Size="8"/>
+								</VBoxLayout>
+								<Space Size="8"/>
+								</HBoxLayout>
+								<Space Size="16"/>
+							</HBoxLayout>
+							<Space Size="21"/>
+							<HBoxLayout Name="SubFunction"  SizePolicy="Spring;Fix" Height="27" Background="">
+								<PushAttr IconAlign="Right" IconMargin="9" TextMargin="27" FontSize="13" TextColor="#666666;#000000"/>
+								<Space Size="22"/>
+								<TextButton Name="DocTrans" Height="0"/>
+								<Space Size="39"/>
+								<TextButton Name="YdGrammar" Height="0"/>
+								<Space Size="39"/>
+								<TextButton Name="ScrshotTrans" Height="0"/>
+								<Spring/>
+								<PopAttr IconAlign="" IconMargin="" IconWidth="" IconHeight="" TextMargin="" FontSize="" TextColor=""/>
+								<PopAttr IconAlign="" TextAlign="" SizePolicy=""/>
+								<IconButton   Height="0"/>
+								<Space Size="16"/>
+								<Ref Name="Search"/>
+								<Space Size="24"/>
+							</HBoxLayout>
+							<PopAttr SizePolicy="" FontFamily=""/>
+							<Space Size="71"/>
+							<HBoxLayout Name="SeparatorWrapper" SizePolicy="Spring;Fix" Height="1">
+								<Space Size="24"/>
+								<Separator SizePolicy="Spring;Fix" Height="1" Color="#EBEBEB" LineStyle="DashCustom" DashPattern="4;4"/>
+								<Space Size="24"/>
+							</HBoxLayout>
+							<Spring/>
+							<VBoxLayout Name="ExtPart" SizePolicy="Spring;Fix" Height="219" Background="adv-vip.jpg">
+								<HBoxLayout Name="InfoPart" SizePolicy="Spring;Fix" Height="68" Background="">
+									<PushAttr SizePolicy="Auto;Auto" Align="Center;Bottom" TextAlign="Center;Bottom"/>
+									<Space Size="24"/>
+									<StaticText Height="62" Width="68" Type="Day" AAEnforce="True" TextColor="#333333" FontFamily="$AvertaStd-Light" TextMargin="0;0" FontSize="62"/>
+									<Space Size="6"/>
+									<StaticText Height="20" Width="42" Type="Month" AAEnforce="True" Format="Alphabet" TextPosCorrect="0;4" TextColor="#333333" FontFamily="$AvertaStd-Regular" FontSize="20"/>
+									<Space Size="12"/>
+									<HBoxLayout Name="DailyPart" Height="0">
+			
+									</HBoxLayout>
+									<Space Size="24"/>
+								</HBoxLayout>
+								<Space Size="35"/>
+								<HBoxLayout Name="AdvPart" Height="0" >
+									<Space Size="24"/>
+									<Space Size="24"/>
+								</HBoxLayout>
+								<Spring/>
+								<Space Size="22"/>
+							</VBoxLayout>
+						</VBoxLayout>
+						<VBoxLayout Name="DictPage" SizePolicy="Spring;Spring">
+							<Space Size="1"/>
+							<HBoxLayout Name="DictSubFrameWrapper" SizePolicy="Spring;Auto" Background="">
+								<Space Size="16"/>
+								<Frame Name="DictPageSubFrame" SizePolicy="Spring;Auto">
+									<RichInputBox Shared="True" Name="MainInputBox" SizePolicy="Spring;Fix" Height="28" Background="#00F7F8FA" TextColor="#00333333" DefTextColor="#00333333" TextFontFamily="Microsoft YaHei;微软雅黑;segoe UI;sans serif" FontSize="13;14;13" LineHeight="26;26" ShowLines="5" MaxTextNum="5000" ScrollBarThickness="6" ScrollBarBgColor="#F7F8FA" ScrollBarColor="#D6D6D6;#C1C1C1"/>
+									<IconButton Shared="True" Background="#F7F8FA" Name="InputClear" Width="16" Height="16" IconAlign="Center;Bottom" Icon="input-clear.png;input-clear-hover.png" ToolTip="@TipClear"/>
+									<IconButton Name="History" Background="#F7F8FA" Shared="True" Width="16" Height="16" Icon="history.png;history-hover.png" ToolTip="@TipHistory"/>									
+									<IconButton Shared="True" Background="#F7F8FA" Name="HandInput" Width="16" Height="16" Icon="hd.png;hd-hover.png" ToolTip="@TipHandInput"/>
+									<HBoxLayout Name="QuerySubPage" SizePolicy="Spring;Fix" Height="48" Background="#F7F8FA">
+										<Space Size="8"/>
+										<Ref Name="MainInputBox"/>
+										<Space Size="2"/>
+										<Ref Name="InputClear"/>
+										<Space Size="16"/>
+										<Ref Name="History"/>
+										<Space Size="16"/>
+										<Ref Name="HandInput"/>
+										<Space Size="16"/>
+										<Ref Name="Search"/>
+										<Space Size="8"/>
+									</HBoxLayout>
+									<VBoxLayout Name="TransSubPage" SizePolicy="Spring;Auto" Background="#F7F8FA">
+										<Space Size="15"/>
+										<HBoxLayout SizePolicy="Spring;Auto" Background="#00000000">
+											<Space Size="8"/>
+											<Ref Name="MainInputBox"/>
+											<Space Size="8"/>
+										</HBoxLayout>
+										<Space Size="32"/>
+										<HBoxLayout SizePolicy="Spring;Auto" Background="#00000000">
+											<Spring/>
+											<Ref Name="InputClear"/>
+											<Space Size="16"/>
+											<Ref Name="History"/>
+											<Space Size="16"/>
+											<Ref Name="HandInput"/>
+											<Space Size="16"/>											
+											<Ref Name="Search"/>
+											<Space Size="8"/>
+										</HBoxLayout>
+										<Space Size="16"/>
+									</VBoxLayout>
+								</Frame>
+								<Space Size="15"/>
+							</HBoxLayout>
+							<Ref Name="MainCefWnd"/>
+						</VBoxLayout>
+						<VBoxLayout Name="TransPage" SizePolicy="Spring;Spring">
+							<Ref Name="MainCefWnd"/>
+						</VBoxLayout>
+						<VBoxLayout Name="WordBookPage" SizePolicy="Spring;Spring">
+							<Space Size="5"/>
+							<Frame Name="WBTitleFrame" SizePolicy="Spring;Fix" Height="26" Background="">
+								<PushAttr ExcluseId="1"/>
+								<WBTextButton Shared="True" SizePolicy="Fix;Spring" Name="WBList" Width="62" Height="26" IconMode="Stretch" IconAlign="Center;Center" Text="@WBList" TextPosCorrect="10;0" FontSize="12" FontFamily="微软雅黑" TextColor="#666666" Icon="wb-list-normal.png;wb-list-hover.png;wb-list-hover.png;wb-list-normal.png" Actived="True"/>
+								<WBTextButton Shared="True" SizePolicy="Fix;Spring" Name="WBCard" Width="62" Height="26" IconMode="Stretch" IconAlign="Center;Center" Text="@WBCard" TextPosCorrect="10;0" FontSize="12" FontFamily="微软雅黑" TextColor="#666666" Icon="wb-card-normal.png;wb-card-hover.png;wb-card-hover.png;wb-card-normal.png"/>
+								<WBTextButton Shared="True" SizePolicy="Fix;Spring" Name="WBReview" Width="62;82" Height="26" IconMode="Stretch" IconAlign="Center;Center" Text="@WBReview" TextPosCorrect="10;0" TextNotifyPosCorrect="1;0" FontSize="12" NotifyFontSize="10" FontFamily="微软雅黑" TextColor="#666666" NotifyTextColor="#FFFFFF" Icon="wb-review.png;wb-review-hover.png;wb-review-hover.png;wb-review.png"/>
+								<PopAttr ExcluseId=""/>
+								<TextButton Name="Category" Shared="True" SizePolicy="Fix;Auto" Width="60" Icon="lang-drop.png;lang-drop-hover.png;lang-drop-hover.png;lang-drop.png" IconAlign="Left" IconMargin="8" IconWidth="8" IconHeight="4" Text="@WBAllCategory" TextAlign="Left" TextMargin="0" FontFamily="微软雅黑" FontSize="12" TextColor="#666666;#000000"/>
+								<HBoxLayout Name="WordBookTitle" SizePolicy="Spring;Fix" Height="26">
+								<PushAttr SizePolicy="Auto;Auto" IconAlign="Center;Bottom"/>
+									<Space Size="20"/>
+									<Ref Name="Category"/>
+									<Space Size="24"/>
+									<TextButton Name="Order" SizePolicy="Auto;Auto" Height="12" Icon="lang-drop.png;lang-drop-hover.png;lang-drop-hover.png;lang-drop.png" IconAlign="Left" IconMargin="8" IconWidth="8" IconHeight="4" Text="@WBOrderNewOld" TextAlign="Left" TextMargin="0" FontFamily="微软雅黑" FontSize="12" TextColor="#666666;#000000"/>
+									<Space Size="10"/>
+									<IconButton Name="WBSetting" Icon="wb-setting-normal.png;wb-setting-hover.png;wb-setting-hover.png;wb-setting-normal.png" Width="48" Height="48" IconWidth="15" IconHeight="16" ToolTip="@TipMore"/>
+									<Space Size="10"/>
+									<IconButton Name="WBSync" Icon="wb-sync-normal.png;wb-sync-hover.png;wb-sync-hover.png;wb-sync-normal.png" Width="54" Height="45" IconWidth="18" IconHeight="15" ToolTip="@TipSync"/>
+									<Space Size="10"/>
+									<Frame Name="WBSearchFrame" SizePolicy="Spring;Spring" Background="">
+										<HBoxLayout Name="WBSearchOrignalTitle" SizePolicy="Spring;Spring">
+											<IconButton Name="WBSearchIcon" Icon="wb-search.png;wb-search-hover.png;wb-search-hover.png;wb-search.png" Width="54" Height="54" IconWidth="18" IconHeight="18" ToolTip="@TipSearch"/>
+										</HBoxLayout>
+										<HBoxLayout Name="WBSearchTitle" SizePolicy="Spring;Auto">
+											<IconButton Name="WBInputLeftBorder" SizePolicy="Fix;Fix" Background="#00F7F8FA" Width="14" Height="28" Icon="noImg;noImg;noImg;wb-search-left.png" Enabled="False"/>
+											<HBoxLayout Name="WBSearchLayout" SizePolicy="Spring;Fix" Background="#F7F8FA" Height="26">
+												<InputBox Name="WBInput" SizePolicy="Spring;Fix" Height="26" MaxTextNum="256" Background="#00F7F8FA" BackUnfocus="#00F7F8FA" TextColor="#00333333" DefaultText="@WBSearchDefaultInput" DefTextColor="#00B3B3B3" FontFamily="微软雅黑" FontSize="13"/>
+												<IconButton Name="WBSearchClose" SizePolicy="Fix;Fix" Background="#00F7F8FA" Icon="wb-searchclose.png;wb-searchclose-hover.png" Width="12" Height="12" ToolTip="@TipHide"/>
+											</HBoxLayout>
+											<IconButton Name="WBInputRightBorder" SizePolicy="Fix;Fix" Background="#00F7F8FA" Width="14" Height="28" Icon="noImg;noImg;noImg;wb-search-right.png" Enabled="False"/>
+										</HBoxLayout>
+									</Frame>
+									<Space Size="10"/>
+									<Ref Name="WBList"/>
+									<Space Size="10"/>
+									<Ref Name="WBCard"/>
+									<Space Size="10"/>
+									<Ref Name="WBReview"/>
+									<Space Size="11"/>
+								<PopAttr IconAlign="" SizePolicy=""/>
+								</HBoxLayout>
+								<HBoxLayout Name="WordBookMngTitle" SizePolicy="Spring;Fix" Height="26">
+								<PushAttr SizePolicy="Auto;Auto" IconAlign="Center;Bottom"/>
+									<Space Size="20"/>
+									<CheckBox Name="WordBookAllSel" Text="全选" TextMargin="20;20" FontFamily="微软雅黑" FontSize="12;11" TextColor="#666666" SizePolicy="Auto;Fix" Height="16;31" Icon="check.png" CheckedIcon="checked.png" IconMargin="0;20" IconHeight="14" IconWidth="14"/>
+									<Space Size="20"/>
+									<PushAttr IconAlign="Right" IconMargin="6" TextAlign="Left" TextMargin="20" FontFamily="微软雅黑" FontSize="12" TextColor="#666666;#000000"/>
+									<TextButton Name="WBMoveTo" IconWidth="15" IconHeight="14" Icon="wb-move.png;wb-move-hover.png" Text="移动到"/>
+									<Space Size="20"/>
+									<TextButton Name="WBDelete" IconWidth="15" IconHeight="15" Icon="wb-delete.png;wb-delete-hover.png" Text="删除"/>
+									<Space Size="20"/>
+									<TextButton Name="WBAddReview" IconWidth="14" IconHeight="15" Icon="wb-addreview.png;wb-addreview-hover.png" Text="加入复习"/>
+									<Space Size="20"/>
+									<TextButton Name="WBNoReview" IconWidth="14" IconHeight="15" Icon="wb-noreview.png;wb-noreview-hover.png" Text="不再复习"/>
+									<PopAttr IconAlign="" IconMargin="" TextAlign="" TextMargin="" FontFamily="" FontSize="" TextColor=""/>
+									<Spring/>
+									<IconButton Name="WBFinishMng" Icon="wb-finish.png;wb-finish-hover.png;wb-finish-hover.png;wb-finish.png" Width="80" Height="40" IconWidth="40" IconHeight="20"/>	
+									<Space Size="20"/>
+								<PopAttr IconAlign="" SizePolicy=""/>
+								</HBoxLayout>
+								<HBoxLayout Name="WordBookCardTitle" SizePolicy="Spring;Fix" Height="26">
+								<PushAttr SizePolicy="Auto;Auto" IconAlign="Center;Bottom"/>
+									<Space Size="20"/>
+									<Ref Name="Category"/>
+									<Space Size="24"/>
+									<IconButton Name="WBCardPlay" Icon="wb-play.png;wb-play-hover.png;wb-play-hover.png;wb-play.png" Width="22" Height="28" IconWidth="11" IconHeight="14" ToolTip="@TipPlayWb"/>
+									<Space Size="27"/>
+									<IconButton Name="WBCardPreference" Icon="wb-setting-normal.png;wb-setting-hover.png;wb-setting-hover.png;wb-setting-normal.png" Width="48" Height="48" IconWidth="15" IconHeight="16" ToolTip="@TipPreference"/>
+									<Spring/>
+									<Ref Name="WBList"/>
+									<Space Size="10"/>
+									<Ref Name="WBCard"/>
+									<Space Size="10"/>
+									<Ref Name="WBReview"/>
+									<Space Size="11"/>
+								<PopAttr IconAlign="" SizePolicy=""/>
+								</HBoxLayout>
+								<HBoxLayout Name="WordBookCardPlayTitle" SizePolicy="Spring;Fix" Height="26">
+								<PushAttr SizePolicy="Auto;Auto" IconAlign="Center;Bottom"/>
+									<Space Size="24"/>
+									<IconButton Name="WBCardPause" Icon="wb-pause.png;wb-pause-hover.png;wb-pause-hover.png;wb-pause.png" Width="22" Height="28" IconWidth="11" IconHeight="14" ToolTip="@TipPauseWb"/>
+									<Space Size="26"/>
+									
+									<PushAttr ExcluseId="2"/>
+									<CheckBox Name="WBCardFast" Text="@WBCardFast" Height="16" Icon="selected-off.png" CheckedIcon="selected-on.png"  IconHeight="16" IconWidth="16" TextColor="#666666" FontFamily="微软雅黑" FontSize="13" TextMargin="24"/>
+									<Space Size="30"/>
+									<CheckBox Name="WBCardMedium" Text="@WBCardMedium" Height="16" Icon="selected-off.png" CheckedIcon="selected-on.png"  IconHeight="16" IconWidth="16" TextColor="#666666" FontFamily="微软雅黑" FontSize="13" TextMargin="24" Actived="True" Checked="True"/>
+									<Space Size="30"/>
+									<CheckBox Name="WBCardSlow" Text="@WBCardSlow" Height="16" Icon="selected-off.png" CheckedIcon="selected-on.png"  IconMargin="0" IconHeight="16" IconWidth="16" TextColor="#666666" FontFamily="微软雅黑" FontSize="13" TextMargin="24"/>
+									<PopAttr ExcluseId=""/>
+									
+									<Spring/>
+									<Ref Name="WBList"/>
+									<Space Size="10"/>
+									<Ref Name="WBCard"/>
+									<Space Size="10"/>
+									<Ref Name="WBReview"/>
+									<Space Size="11"/>
+								<PopAttr IconAlign="" SizePolicy=""/>
+								</HBoxLayout>
+								<HBoxLayout Name="WordBookReviewTitle" SizePolicy="Spring;Fix" Height="26">
+								<PushAttr SizePolicy="Auto;Auto" IconAlign="Center;Bottom"/>
+									<Space Size="20"/>
+									<Ref Name="Category"/>
+									<Space Size="24"/>
+									<TextButton Name="WBReviewDisOrder" SizePolicy="Auto;Auto" Height="12" Text="@WBReviewDisOrder" TextPosCorrect="0;-1" FontFamily="微软雅黑" FontSize="12" TextColor="#666666"/>
+									<Space Size="6"/>
+									<CheckBox Name="WBReviewDisOrderCheck" Height="16" Icon="switch-off.png" CheckedIcon="switch-on.png" IconMargin="0" IconHeight="13" IconWidth="24"/>
+									<Space Size="30"/>
+									<IconButton Name="WBReviewPreference" Icon="wb-setting-normal.png;wb-setting-hover.png;wb-setting-hover.png;wb-setting-normal.png" Width="48" Height="48" IconWidth="15" IconHeight="16" ToolTip="@TipPreference"/>
+									<Spring/>
+									<Ref Name="WBList"/>
+									<Space Size="10"/>
+									<Ref Name="WBCard"/>
+									<Space Size="10"/>
+									<Ref Name="WBReview"/>
+									<Space Size="11"/>
+								<PopAttr IconAlign="" SizePolicy=""/>
+								</HBoxLayout>
+							</Frame>
+							<Space Size="10"/>
+							<Separator SizePolicy="Spring;Fix" Height="1" Background="#E6E6E6"/>
+							<Frame Name="WBContentSubFrame" SizePolicy="Spring;Spring" Background="">
+								<VBoxLayout Name="WordBookContent" SizePolicy="Spring;Spring">
+									<Frame Name="WordBookDetailFrame" SizePolicy="Spring;Spring" Background="">
+										<HBoxLayout Shared="True" Name="WBListAndBar" SizePolicy="Spring;Spring" Weight="0.8">
+											<WordBookList Name="WordBookList" SizePolicy="Spring;Spring" ItemBackground="#FFFFFF;#F5F5F5" ItemTextColor="#333333;#666666;#2E3033;#999999" ItemFontFamily="$AvertaStd-Bold;$AvertaStd-Regular" ItemFontStyle="Bold;Regular" ItemChFontFamily="微软雅黑" DateItemSpace="58" ItemFontSize="16;13;12" ItemChFontSize="14" ItemIconSize="38;200;256;50" ItemPlanHeight="4" ItemGap="1" ItemPadding="20;20" ItemHeight="33" ItemContentHeight="22" ItemCheckBoxSize="14" ItemPlanDetailGap="2" ItemWordGap="8" ItemTransGap="60" ItemDateTextPosCorrect="0;7"/>
+											<ScrollBar Name="WordBookScrollBar" SizePolicy="Fix;Spring" Width="8" Type="Vertical" Background="#FFFFFF" BarColor="#D6D6D6;#C1C1C1" Delta="5"/>
+										</HBoxLayout>
+										<HBoxLayout Name="WordBookListMode" SizePolicy="Spring;Spring" Background="">
+											<Ref Name="WBListAndBar"/>
+										</HBoxLayout>
+										<HBoxLayout Name="WordBookDetailMode" SizePolicy="Spring;Spring" Background="">
+											<Ref Name="WBListAndBar"/>
+											<VBoxLayout Name="WordBookShadow" SizePolicy="Fix;Spring" Width="6" Background="wb-shadow.png"/>
+											<Ref Name="MainCefWnd"/>
+										</HBoxLayout>
+									</Frame>
+									<Separator SizePolicy="Spring;Fix" Height="1" Background="#E6E6E6"/>
+									<HBoxLayout SizePolicy="Spring;Fix" Height="26" Background="">
+										<TextButton Name="WordBookListNum" SizePolicy="Spring;Fix" TextAlign="Right" Height="12" Text="" FontFamily="微软雅黑" FontSize="12" TextColor="#666666" Enabled="False"/>
+										<Space Size="40"/>
+									</HBoxLayout>
+								</VBoxLayout>
+								<HBoxLayout Name="WordBookCardModelContent" SizePolicy="Spring;Spring" >
+									<Ref Name="MainCefWnd"/>
+								</HBoxLayout>	
+							</Frame>
+						</VBoxLayout>
+						<VBoxLayout Name="DocTransPage" SizePolicy="Spring;Spring">
+							<HBoxLayout Name="DTHFileSelect" SizePolicy="Spring;Fix" Height="200" Background="">
+								<Space Size="16"/>
+								<Separator Name="DragAreaLeft"  SizePolicy="Fix;Fix" Width="1" Height="200" Color="#E6E6E6" LineStyle="DashCustom" DashPattern="5;5"/>	
+								<VBoxLayout Name="DTVFileSelect" SizePolicy="Spring;Spring">
+									<Separator Name="DragAreaTop"  SizePolicy="Spring;Fix" Width="628" Height="1" Color="#E6E6E6" LineStyle="DashCustom" DashPattern="5;5"/>								    		
+								    <Frame Name="DTDragAreaFrame" SizePolicy="Spring;Spring">
+								    	<PushAttr Background="#F7F8FA"/>
+								    	<VBoxLayout Name="DTDragAreaOri" SizePolicy="Spring;Fix" Height="198">
+								    		<Space Size="62"/>
+								    		<TextButton Name="DTDragTip" SizePolicy="Auto;Fix"  Height="18" Text="@DTDragTip"  TextColor="#999999" FontSize="16"  FontFamily="微软雅黑" FontStyle="Bold" Enabled="False" IconNotify="doc-new.png;doc-new.png;doc-new.png" IconNotifyWidth="20" IconNotifyHeight="10" IconNotifyMargin="325"/>
+								    		<Space Size="16"/>
+								    		<TextButton Name="DTDragOrTip" SizePolicy="Auto;Fix" Height="12" Text="或"  TextColor="#999999" FontSize="12"  FontFamily="微软雅黑" Enabled="False"/>
+								    		<Space Size="16"/>
+								    		<TextButton Name="DTSelectButton" SizePolicy="Fix;Fix" Height="27" Width="78" Icon="search.png;search-hover.png" IconMode="Stretch" Text="@DocSelect" FontSize="13" FontFamily="微软雅黑" TextColor="#FFFFFF"/>						
+								    		<Space Size="49"/>
+								    	</VBoxLayout>
+								    	<VBoxLayout Name="DTDragAreaDragging" SizePolicy="Spring;Fix" Height="198">
+								    		<TextButton Name="DTDragging" SizePolicy="Spring;Spring" Text="@DocDragTip"  TextColor="#666666" FontSize="16"  FontFamily="微软雅黑" Enabled="False"/>
+								    	</VBoxLayout>
+								    </Frame>
+									<Separator Name="DragAreaBottom"  SizePolicy="Spring;Fix" Width="628" ForeHeight="1" Color="#E6E6E6" LineStyle="DashCustom" DashPattern="5;5"/>                    									
+								</VBoxLayout>
+								<PopAttr Background=""/>
+								<Separator Name="DragAreaRight"  SizePolicy="Fix;Fix" Width="1" Height="200" Color="#E6E6E6" LineStyle="DashCustom" DashPattern="5;5"/>
+								<Space Size="16"/>
+							</HBoxLayout>
+							<Space Size="53"/>
+							<Frame Name="DTHistoryContentFrame" SizePolicy="Spring;Spring" Background="#FFFFFF">
+								<VBoxLayout Name="DTHistoryHaveList" SizePolicy="Spring;Spring">
+									<HBoxLayout Name="DTHistoryTitle" SizePolicy="Spring;Fix" Height="14">
+										<Space Size="24"/>
+										<TextButton Name="DTTitleName" SizePolicy="Auto;Auto" Text="@DTHistoryListName" TextColor="#333333" FontFamily="微软雅黑" FontSize="14" Enabled="False"/>
+										<Spring/>
+									</HBoxLayout>
+									<Space Size="20"/>
+									<HBoxLayout Name="DTHistoryContent" SizePolicy="Spring;Fix" Height="12">
+										<Space Size="24"/>
+										<TextButton Name="DTName" SizePolicy="Spring;Auto" Text="@DTHistoryName" TextAlign="Left" TextColor="#666666" FontFamily="微软雅黑" FontSize="12" Enabled="False"/>
+										<Space Size="280"/>
+										<TextButton Name="DTPrice" SizePolicy="Fix;Auto"  Width="24" Text="@DTHistoryPrice" TextColor="#666666" FontFamily="微软雅黑" FontSize="12" Enabled="False"/>
+										<Space Size="64"/>
+										<TextButton Name="DTTime" SizePolicy="Fix;Auto" Width="48" Text="@DTHistoryTime" TextColor="#666666" FontFamily="微软雅黑" FontSize="12" Enabled="False"/>
+										<Space Size="170"/>
+									</HBoxLayout>
+									<Space Size="12"/>
+									<HBoxLayout Name="SeparatorWrapper" SizePolicy="Spring;Fix" Height="1">
+										<Space Size="24"/>
+										<Separator SizePolicy="Spring;Fix" Height="1" Color="#F0F0F0"/>
+										<Space Size="24"/>
+									</HBoxLayout>
+									<Space Size="12"/>
+									<HBoxLayout Name="DTHistoryListAndBar" SizePolicy="Spring;Spring" Weight="0.8">
+											<DTHistoryList Name="DTHistoryList" SizePolicy="Spring;Spring" ItemBackground="#FFFFFF;#F7F8FA" ItemTextColor="#333333;#333333;#333333" ItemFontFamily="$AvertaStd-Regular;$AvertaStd-Regular" ItemFontStyle="Regular;Regular" ItemChFontFamily="微软雅黑" ItemFontSize="13;13;13" ItemChFontSize="13" ItemIconSize="245;42;73" ItemGap="1" ItemPadding="24;24" ItemHeight="48" ItemContentHeight="20"  ItemDetailTip="@DocFeedback" ItemDeleteTip="@DTItemDeteleTip" ItemDownloadTip="@DTItemDownloadTip" TypeIconSize="16;19" DownloadIconSize="20;20" DeleteIconSize="20;20" DetailIconSize="20;20" ItemEachGap="8;60;46;29;12;12"/>
+											<ScrollBar Name="DTHistoryScrollBar" SizePolicy="Fix;Spring" Width="8" Type="Vertical" Background="#FFFFFF" BarColor="#D6D6D6;#C1C1C1" Delta="5"/>
+									</HBoxLayout>
+								</VBoxLayout>
+								<VBoxLayout Name="DTHistoryNoList" SizePolicy="Spring;Spring">
+									<IconButton Name="DTNoList" Width="168" Height="108" Icon="doc-nolist.png" Enabled="False"/>
+									<Space Size="16"/>
+									<TextButton Name="DTNoListTextFirst" Width="234" Height="20" Text="@DTNoListTipFirst" FontFamily="微软雅黑" FontSize="13" TextColor="#666666" TextAlign="Center" Enabled="False"/>
+									<TextButton Name="DTNoListTextSecond" Width="234" Height="20" Text="@DTNoListTipSecond" FontFamily="微软雅黑" FontSize="13" TextColor="#666666" TextAlign="Center" Enabled="False"/>
+									<Spring/>
+								</VBoxLayout>
+								<VBoxLayout Name="DTHistoryUnLogin" SizePolicy="Spring;Spring">
+									<Space Size="7"/>
+									<IconButton Name="DTUnLogin" Width="120" Height="101" Icon="doc-unlogin.png" Enabled="False"/>
+									<Space Size="16"/>
+									<TextButton Name="DTUnLoginTextFirst" Width="312" Height="20" Text="@DTUnLoginTipFirst" FontFamily="微软雅黑" FontSize="13" TextColor="#666666" TextAlign="Center" Enabled="False"/>
+									<TextButton Name="DTUnLoginTextSecond" Width="312" Height="20" Text="@DTUnLoginTipSecond" FontFamily="微软雅黑" FontSize="13" TextColor="#666666" TextAlign="Center" Enabled="False"/>
+									<Space Size="16"/>
+                                    <TextButton Name="DTGoLogin" SizePolicy="Fix;Fix" Height="27" Width="78" Icon="doc-gologin.png;doc-gologin-hover.png" IconMode="Stretch"  Text="@DTLogin" FontSize="13" FontFamily="微软雅黑" TextColor="#666666"/>							
+									<Spring/>
+								</VBoxLayout>
+							</Frame>
+							<Space Size="24"/>
+						</VBoxLayout>
+						<VBoxLayout Name="ManualTransPage" SizePolicy="Spring;Spring">
+							<Ref Name="MainCefWnd"/>
+						</VBoxLayout>
+					</Frame>
+					<VBoxLayout Name="RightBorder" SizePolicy="Fix;Spring" Width="1"/>
+				</HBoxLayout>
+				<HBoxLayout SizePolicy="Spring;Fix" Height="1">
+					<HBoxLayout Name="BottomBorder" SizePolicy="Spring;Fix" Height="1"/>
+					<HBoxLayout Name="RBCorner" SizePolicy="Fix;Fix" Height="1" Width="1"/>
+				</HBoxLayout>
+			</VBoxLayout>
+			<PushAttr Distance="8"/>
+			<LangSelect Name="LangSelWnd" SizePolicy="Fix;Fix" Buddy="LangSrcIndicator" Style="Popup" Float="Bottom" Height="188" Width="408" Layout="lang_select_layout.xml" Visible="False"/>
+			<LangSelect Name="LangTransSelWnd" SizePolicy="Fix;Fix" Buddy="GlobalLangSrcIndicator" Style="Popup" Float="Bottom" Height="238" Width="408" Layout="lang_select_trans_layout.xml" Visible="False"/>
+			<LoginInfo Name="LoginInfoWnd" SizePolicy="Fix;Fix" Buddy="LoginInfo" Float="Bottom" Distance="22" FloatAnchor="74;0" Style="Popup" Height="183" Width="150" Layout="login_info_layout.xml" Visible="False"/>
+			<WBDropWnd Name="WBCategoryWnd" SizePolicy="Fix;Spring" Buddy="Category" Style="Popup" Float="Bottom" Height="62" Width="132" Layout="wb_category_layout.xml" Visible="False" ItemBackground="#FFFFFF;#FDF3F3" ItemTextColor="#333333;#D20A0A" ItemFontFamily="微软雅黑" ItemFontSize="12" TextMargin="28"  ItemWidth="132" ItemHeight="30"/>
+			<WBDropWnd Name="WBOrderWnd" SizePolicy="Fix;Fix" Buddy="Order" Style="Popup" Float="Bottom" Height="212" Width="160" Layout="wb_order_layout.xml" Visible="False"/>
+			<WBDropWnd Name="WBSettingWnd" SizePolicy="Fix;Fix" Buddy="WBSetting" Style="Popup" Float="Bottom" Height="152" Width="132" Layout="wb_setting_layout.xml" Visible="False"/>
+			<WBDropWnd Name="WBIOWnd" SizePolicy="Fix;Fix" Buddy="WBSettingWnd" Style="Popup" Float="Right" Height="62" Width="132" Layout="wb_settingio_layout.xml" ItemTextColor="#333333;#D20A0A" ItemDisableTextColor="#CCCCCC" ItemBackground="#FFFFFF;#FDF3F3" Visible="False"/>
+			<WBDropWnd Name="WBMoveToCategoryWnd" SizePolicy="Fix;Spring" Buddy="WBMoveTo" Style="Popup" Float="Bottom" Height="32" Width="132" Layout="wb_movecategory_layout.xml" Visible="False" ItemBackground="#FFFFFF;#FDF3F3" ItemTextColor="#333333;#D20A0A" ItemFontFamily="微软雅黑" ItemFontSize="12" TextMargin="28"  ItemWidth="132" ItemHeight="30"/>
+			<HandInputWnd Name="HandInputWnd" SizePolicy="Fix;Fix" Buddy="HandInput" Style="Popup" Float="Bottom" Distance="24" Extend="282;0" Height="253" Width="384" Layout="handInput_wnd_layout.xml" Visible="False" RecogWidth="28" RecogHeight="28" RecogRightMargin="10" RecogBottomMargin="2" RecogBackgroundColor="#FFFFFF;#EDEEF0" ItemTextColor="#333333;#D20A0A" ItemBackground="#F7F8FA" RowNum="4" ColNum="4" FontFamily="微软雅黑" FontSize="14"/>
+		</HBoxLayout>
+	</Layout>
+</DictFrame>

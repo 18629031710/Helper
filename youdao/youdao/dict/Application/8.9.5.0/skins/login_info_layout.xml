@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<LoginInfoWnd>
+	<Version>1.0</Version>
+	<WinHeight>183</WinHeight>
+	<WinWidth>150</WinWidth>
+	<Layout>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#E5E5E5">
+		<Space Name="TopFrame" Size="1"/>
+		<HBoxLayout SizePolicy="Spring;Spring">
+		<Space Name="LeftFrame" Size="1"/>
+		<PushAttr Background="#FFFFFF" TextAlign="Left" FontFamily="微软雅黑" FontSize="12"/>
+		<VBoxLayout SizePolicy="Spring;Spring" Background="#FFFFFF">
+			<PushAttr SizePolicy="Spring;Fix" Background="#FFFFFF;#FDF3F3" Height="36"/>
+			<PushAttr TextColor="#333333;#D20A0A" FontFamily="微软雅黑" FontSize="12" TextMargin="43"/>
+			<Frame Name="LoginInfoMainFrame" Background="#FFFFFF" SizePolicy="Spring;Spring">
+				<MenuItem Shared="True" Name="LoginInfoRegistVip" Text="@LoginInfoVIPRegist"/>
+				<MenuItem Shared="True" Name="LoginInfoProfile" Text="@LoginInfoProfile"/>
+				<MenuItem Shared="True" Name="LoginInfoFeedback" Text="@MenuFeedback"/>
+				<MenuItem Shared="True" Name="LoginInfoInvest" Text="@LoginInfoInvest"/>
+				<MenuItem Shared="True" Name="LoginInfoSetting" Text="@MenuSetting"/>
+				<MenuItem Shared="True" Name="LoginInfoLogout" Text="@LoginInfoOut"/>
+				<VBoxLayout Name="UnloginPage" SizePolicy="Spring;Spring" Background="#FFFFFF">
+					<MenuItem Name="LoginInfoLogin" Text="@LoginButtonText"/>
+					<Ref Name="LoginInfoRegistVip"/>
+					<Separator Height="1" Background="#E6E6E6"/>
+					<Ref Name="LoginInfoSetting"/>
+					<Ref Name="LoginInfoFeedback"/>
+					<Ref Name="LoginInfoInvest"/>
+				</VBoxLayout>
+				<VBoxLayout Name="LoginNotVipPage" SizePolicy="Spring;Spring" Background="#FFFFFF">
+					<Ref Name="LoginInfoRegistVip"/>
+					<Ref Name="LoginInfoProfile"/>
+					<Separator Height="1" Background="#E6E6E6"/>
+					<Ref Name="LoginInfoSetting"/>
+					<Ref Name="LoginInfoFeedback"/>
+					<Ref Name="LoginInfoInvest"/>
+					<Separator Height="1" Background="#E6E6E6"/>
+					<Ref Name="LoginInfoLogout"/>
+				</VBoxLayout>
+				<VBoxLayout Name="LoginVipPage" SizePolicy="Spring;Spring" Background="#FFFFFF">
+					<MenuItem Name="LoginInfoVipCenter" Text="@LoginInfoVIPCenter"/>
+					<Ref Name="LoginInfoProfile"/>
+					<Separator Height="1" Background="#E6E6E6"/>
+					<Ref Name="LoginInfoSetting"/>
+					<Ref Name="LoginInfoFeedback"/>
+					<Ref Name="LoginInfoInvest"/>
+					<Separator Height="1" Background="#E6E6E6"/>
+					<Ref Name="LoginInfoLogout"/>
+				</VBoxLayout>
+			</Frame>
+		</VBoxLayout>
+		<Space Name="RightFrame" Size="1"/>
+		</HBoxLayout>
+		<Space Name="BottomFrame" Size="1"/>
+		</VBoxLayout>
+	</Layout>
+</LoginInfoWnd>

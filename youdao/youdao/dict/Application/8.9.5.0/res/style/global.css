@@ -1,0 +1,372 @@
+body,ul,li,dd,h1,h2,h3,p,form{
+	margin:0;
+	padding:0;
+}
+body{
+    background:#fff url(../images/bg.gif) repeat-x left 85px;
+    font-size:14px;
+    color:#333;
+}
+
+a{
+	color:#06c;
+}
+img{
+	border:none;
+}
+
+.icons{
+	display:block;
+	overflow:hidden;
+	height:0;
+	padding:0;
+	background:url(../images/icons.gif) no-repeat -900px;
+}
+.hidden{
+	display:none;
+}
+.clear:after{
+	content:".";
+	display:block;
+	visibility:hidden;
+	height:0;
+	clear:both;
+}
+.clear{
+	display:inline-block;
+	*height:1%;
+}
+.txt{
+	color:#666;
+}
+.slice{
+	margin:auto 10px;
+}
+.fl{
+	float:left;
+}
+
+#wrapper{
+	width:960px;
+	margin:0 auto 20px;
+	position: relative;
+}
+#header{
+	position:relative;
+	height:85px;
+}
+h1{
+	width:386px;
+	height:35px;
+	position:absolute;
+	top:25px;
+}
+h1 a.icons{
+	width:386px;
+	padding-top:35px;
+	background-position:left top;
+}
+#banner,#main,#footer{
+	font-family:Arial, Helvetica, sans-serif;
+}
+#topnav{
+	position:absolute;
+	right:0;
+	top:5px;
+	font-size:12px;
+}
+#navigation{
+	position:absolute;
+	right:0;
+	top:60px;
+	font-size:14px;
+}
+#navigation li{
+	float:left;
+	list-style:none;
+	margin-left:15px;
+}
+#navigation a:hover,#navigation a.active{
+	color:#333;
+	text-decoration:none;
+}
+#banner{
+	position:relative;
+	height:310px;
+	margin:10px 0 20px;
+	background:url(../images/banner.jpg);
+}
+#banner a{
+	cursor:pointer;
+}
+#bannerFeature{
+	display:none;
+	position:absolute;
+	left:90px;
+	top:100px;
+	line-height:140%;
+}
+#bannerFeature li{
+	margin-left:15px;
+}
+#downloadSth{
+	position:absolute;
+	left:95px;
+	top:160px;
+	*top:170px;
+}
+#downloadSth dd{
+	margin-left:5px;
+	font-size:12px;
+}
+#downloadSth a{
+	color:#e1e1e1;
+}
+#download{
+	width:178px;
+	margin-bottom:5px;
+	padding-top:53px;
+	background:url(../images/downloadBtns.png) no-repeat left top;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/downloadBtn.png", sizingMethod="scale");
+	cursor:pointer;
+}
+#download:hover{
+	background-position:-178px top;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/downloadBtnOver.png", sizingMethod="scale");
+}
+#dicts{
+	position:absolute;
+	left:20px;
+	bottom:5px;
+	font-size:12px;
+}
+#dicts a{
+	color:#000;
+}
+#somelink{
+	display:none;
+	position:absolute;
+	right:0;
+	top:0;
+	width:72px;
+	padding-top:72px;
+	background:url(../images/somelink.png) no-repeat right top;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/somelink.png", sizingMethod="scale");
+}
+#somelink:hover{
+	background:url(../images/somelinkover.png) no-repeat right top;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/somelinkover.png", sizingMethod="scale");
+}
+#bannerShots{
+	overflow:hidden;
+	position:absolute;
+	right:40px;
+	bottom:0;
+	width:370px;
+	height:0;
+	padding:292px 0 0;
+	text-indent:-1000px;
+	background:url(../images/screen.png) no-repeat left top;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/screen.png", sizingMethod="scale");
+}
+#main{
+	width:960px;
+}
+#content{
+	float:left;
+	width:620px;
+}
+#content .item{
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+}
+#content .item h2{
+	position:relative;
+	margin-bottom:10px;
+	padding:6px 0;
+	font-size:14px;
+	color:#666;
+	border-bottom:1px solid #e5e5e5;
+}
+#ad small{
+	color:red;
+}
+#features li{
+	float:left;
+	width:290px;
+	height:60px;
+	padding:10px 10px;
+	vertical-align:middle;
+	list-style:none;
+	border-bottom:1px dotted #e5e5e5;
+	font-size:12px;
+	line-height:160%;
+	color:#787878;
+}
+#features li h3{
+	float:left;
+	width:60px;
+	margin-right:10px;
+	padding-top:60px;
+}
+#f-1{
+	background-position:left -100px;
+}
+#f-2{
+	background-position:-60px -100px;
+}
+#f-3{
+	background-position:-120px -100px;
+}
+#f-4{
+	background-position:-180px -100px;
+}
+#f-5{
+	background-position:left -160px;
+}
+#f-6{
+	background-position:-60px -160px;
+}
+#f-7{
+	background-position:-120px -160px;
+}
+#f-8{
+	background-position:-180px -160px;
+}
+#features li strong{
+	display:block;
+	margin-top:3px;
+	font-size:14px;
+	color:#666;
+}
+#sideBar{
+	float:right;
+	width:320px;
+}
+.function{
+	margin-bottom:15px;
+}
+.function h2{
+	position:relative;
+	margin-bottom:10px;
+	padding:6px 0;
+	font-size:14px;
+	color:#666;
+	border-bottom:1px solid #e5e5e5;
+}
+.function h2 em{
+	position:absolute;
+	right:5px;
+	font-style:normal;
+	font-weight:normal;
+	font-size:12px;
+}
+.function li{
+	margin-left:15px;
+	list-style:square;
+	color:#06c;
+	line-height:180%;
+	font-size:12px;
+}
+#awards.function li{
+	margin:0 0 15px;
+	list-style:none;
+}
+#awards.function img.fl{
+	width:81px;
+	margin-right:10px;
+}
+#awards.function li a{
+	float:left;
+	width:225px;
+}
+#diannaobao a{
+	padding:10px 0;
+}
+#chip img{
+	margin-top:15px;
+}
+#content #dictform.item{
+	width:598px;
+	margin:0 10px 0 0;
+	padding:10px;
+	background:#ebf5f5;
+	border:1px solid #d6ebeb;
+}
+#dictform label{
+	float:left;
+	width:91px;
+	margin-right:5px;
+	padding-top:21px;
+	background-position:-390px top;
+}
+#footer{
+	text-align:center;
+	font-size:12px;
+	padding:10px 0 50px;
+	border-top:1px solid #e5e5e5;
+}
+.index #main{
+	background:url(../images/bg.gif) repeat-y 630px top;
+}
+.sub #main{
+	margin:20px 0;
+}
+.sub #main h2{
+	margin-bottom:15px;
+	padding-bottom:5px;
+	font-size:16px;
+	color:#666;
+	border-bottom:1px dotted #ccc;
+}
+.sub #main h3{
+	position:relative;
+	margin:25px 0 10px;
+	padding:10px 50px 10px 0;;
+	font-size:14px;
+	border-top:2px solid #e5e5e5;
+	background:#f1f1f1;
+}
+.sub #main h3 small{
+	font-size:x-small;
+	font-weight:normal;
+}
+.sub #main h3 em{
+	position:absolute;
+	right:5px;
+	font-style:normal;
+	font-weight:normal;
+	font-size:12px;
+}
+.sub #contents{
+	line-height:180%;
+}
+.sub #main p{
+	margin-bottom:10px;
+	line-height:160%;
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+.sub #main p:first-letter{
+	margin-left:30px;
+}
+.sub #main p img.m{
+	margin-bottom:-5px;
+}
+.sub #main p.c{
+	text-align:center;
+}
+.sub #main p.c img{
+	margin:10px;
+}
+.changelog #main li{
+	margin-left:15px;
+	list-style:square;
+	line-height:180%;
+}

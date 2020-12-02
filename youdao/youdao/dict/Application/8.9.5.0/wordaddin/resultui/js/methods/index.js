@@ -1,0 +1,2 @@
+/* generated @ 2018-11-1 14:16:32*/
+"use strict";require.config({paths:{ErrorCode:"methods/errorCode",RenderBody:"methods/RenderBody"}}),define(["RenderBody","ErrorCode"],function(e,r){var d=function(r){e.render({document:r})};return{render:d}});

@@ -1,0 +1,280 @@
+html{
+    background-attachment:fixed;
+}
+/*导航*/
+.nav {
+    background: url('bg.png') repeat-x;
+    height: 59px;
+    padding-top: 4px;
+    width: 100% ;
+    _width: 98%;
+    top: 0;
+    position: fixed;
+    left: 0;
+    z-index:999;
+    _position:absolute;
+    _top: expression(documentElement.scrollTop+'px');
+}
+
+.s-search {
+    background: url("s-search.png") repeat-x;
+    margin: 0 15px;
+    vertical-align: top;
+    position: relative;
+    height: 27px;
+}
+
+.rea-bg {
+    position: absolute;
+    display: inline-block;
+    height: 27px;
+    width: 4px;
+    left: 0;
+    top: 0;
+    background: url('nav.png') no-repeat -134px -58px;
+}
+
+.s-inpt, .s-btn {
+    border: 0;
+    background: transparent;
+    outline: 0;
+}
+
+.s-btn {
+    display: inline-block;
+    background: url('nav.png') no-repeat 0 -58px;
+    width: 64px;
+    height: 27px;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+
+.s-btn:hover{
+    background-position: -71px -58px;
+}
+
+.search-inpt {
+    vertical-align: top;
+    zoom:1;
+    margin:0 0 0 7px;
+    _margin-left: 4px;
+    padding-right:75px;
+}
+
+.s-inpt {
+    display: block;
+    vertical-align: top;
+    height: 24px;
+    line-height: 24px;
+	font-size: 16px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*上一句下一句导航*/
+.sen-nav {
+    padding-top: 5px;
+    line-height: 24px;
+}
+
+.sen-nav .rel-sen {
+    margin-left: 10px;
+}
+
+.sen-nav .pre {
+    background: url('nav.png') no-repeat 0 -1px;
+    display: inline-block;
+    width: 92px;
+    padding-top: 24px;
+    height: 0;
+    overflow: hidden;
+}
+
+.sen-nav .pre:hover {
+    background-position: -93px 0;
+}
+
+.sen-nav .next {
+    background: url('nav.png') no-repeat 0 -29px;
+    display: inline-block;
+    width: 92px;
+    padding-top: 24px;
+    height: 0;
+    overflow: hidden;
+}
+
+.sen-nav .next:hover {
+    background-position: -93px -28px;
+}
+
+.sen-nav .page {
+    float: right;
+    color: #959595;
+    margin-right: 15px;
+}
+
+/*当不可用时加以下属性*/
+.preDisabled .pre {
+    background-position: -186px -1px;
+}
+
+.nextDisabled .next {
+    background-position: -186px -29px;
+}
+
+.preDisabled .pre:hover {
+    background-position: -186px -1px;
+}
+
+.nextDisabled .next:hover {
+    background-position: -186px -29px;
+}
+
+/*seek help*/
+.no-refer .seek-help {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.no-refer ul {
+    clear: both;
+}
+
+.no-refer ul li {
+    overflow: hidden;
+    zoom:1;
+}
+
+.no-refer img{
+    float:left;
+    width:79px;
+    height:66px;
+}
+
+.no-refer .help{
+    margin-left: 79px;
+    margin-top: 10px;
+}
+
+.no-refer .more-help{
+    margin-bottom: 15px;
+    margin-left: 3px
+}
+
+
+/*tab*/
+#similarResults{
+    padding-top: 73px;
+}
+
+#similarResults .tab-current {
+    color: #000;
+    cursor: default;
+    background-position: left top;
+    margin: 2px 0 0 0;
+}
+
+#similarResults .tab-current span {
+    background-position: right 0;
+    cursor: default;
+    margin-right: 0;
+    color: #303436;
+}
+
+.puzzle-phrase .trans-container li {
+    padding-left: 80px;
+    font-weight: bold;
+    overflow: hidden;
+    zoom:1;
+}
+
+.puzzle-phrase .word {
+    margin-left: -80px;
+    font-weight: normal;
+    width: 80px;
+    float: left;
+    padding-top: 2px;
+}
+
+.trans-container .ol {
+    list-style: decimal;
+    margin: 0.67em 1.25em 1.5em 1.5em;
+}
+
+/*------信息是否有用------*/
+.isUseful{
+		margin-bottom: 10px;
+    height: 24px;
+    line-height: 24px;
+		position:relative;
+}
+
+.isUseful a{
+    display: inline-block;
+    width:54px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
+    background: #ccf1ff;
+    color: #35A1D4;
+}
+
+.isUseful a:hover{
+    background: #effaff;
+    background: -webkit-linear-gradient(top, #effaff, #e2f7ff);
+    background: -moz-linear-gradient(top, #effaff, #e2f7ff 100%);
+}
+
+.trans-container .ol {
+margin-left: 33px\9;
+}
+
+#feedback{
+	width:100%;
+	background:#FEFCD1;
+	position:absolute;
+	top:0;
+	left:0;
+	height:24px;
+	line-height:24px;
+	text-align:center;
+	display:none;
+	}
+
+
+/*正在查询*/
+	#actionTips {
+		position: absolute;
+		top: 68px;
+		left: 0;
+		z-index: 10;
+		width: 100%;
+		text-align: center;
+	}
+
+	#actionTips .at-container {
+		display: inline;
+		padding: 3px 10px;
+		color: gray;
+		background: #FEFCD1;
+	}
+    .offline{
+        background: url('OffLine.jpg') no-repeat;
+        width: 280px;
+        height: 216px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -128px;
+        margin-left: -140px;
+    }
+
+    .offline ul{
+        margin: 21px 2px 4px 117px;
+        line-height: 20px;
+    }
